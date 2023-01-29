@@ -49,8 +49,8 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 		setFlashcards(cloneDeep(flashcards));
 	};
 	const handleSpanishImport = () => {
-		const lines = tools.convertStringBlockToLines(spanishImportText);
-		console.log(lines);
+		const spanishFlashcards =
+			tools.buildSpanishFlashcardJsonText(spanishImportText);
 	};
 	return (
 		<AppContext.Provider
@@ -60,7 +60,7 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 				handleToggleFlashcard,
 				handleSpanishImport,
 				spanishImportText,
-				setSpanishImportText
+				setSpanishImportText,
 			}}
 		>
 			{children}

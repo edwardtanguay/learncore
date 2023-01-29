@@ -8,16 +8,19 @@ export const PageImport = () => {
 	const formatExampleText = `
 I'm sorry, I do not understand you. I still can't understand you.
 Lo siento, no te entiendo. Todavía no puedo entenderte.
+4.9
 cantUnderstand
 
 What time is it?
 ¿Qué hora será?
+4.2
 
-My Spanish isn't good enough to understand.
+My Spanish isn't good enough to understand you.
 Mi español no es suficiente para entenderte.
+4.95
 cantUnderstand
 
-I will do it.
+I'll do it.
 Lo haré.
 `;
 	return (
