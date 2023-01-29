@@ -1,0 +1,66 @@
+body {
+	background-color: #333;
+	color: #ccc;
+	font-family: sans-serif;
+	padding: 0 1rem;
+
+	h1 {
+		color: rgb(209, 168, 85);
+	}
+
+	nav {
+		background-color: #222;
+		padding: .5rem;
+
+		a {
+			color: #aaa;
+			text-decoration: none;
+			margin-right: 1rem;
+		}
+
+		a.active {
+			color: rgb(211, 211, 110);
+		}
+	}
+
+	.pageJobs {
+		.jobs {
+			.job {
+				background-color: #222;
+				padding: 1rem;
+				margin-bottom: 1rem;
+
+				div {
+					margin-bottom: .5rem;
+				}
+
+				.title {
+					a {
+						color: rgb(176, 146, 91);
+						font-size: 1.5rem;
+					}
+				}
+
+				.company {
+					color: rgb(208, 208, 114);
+				}
+
+				.description {
+					font-style: italic;
+					color: #999;
+				}
+
+				.skills {
+					color: green;
+					font-family: 'Courier New', Courier, monospace;
+				}
+
+				.statusLine {
+					color: rgb(232, 133, 116);
+					font-family: 'Courier New', Courier, monospace;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}

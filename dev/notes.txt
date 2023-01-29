@@ -1,0 +1,9 @@
+{
+	"jobTitle": "nnnn",
+	"company": "nnnnn",
+	"url": "nnn"
+	"description": "nnnnnnnnn",
+	"skills": "nnnnnn",
+	"publicationData": "2022-11-17"
+	"status": "sendApplication"
+}
