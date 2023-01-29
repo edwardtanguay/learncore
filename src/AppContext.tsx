@@ -3,6 +3,7 @@ import { createContext } from 'react';
 import axios from 'axios';
 import { IFlashcard, IRawFlashcard } from './interfaces';
 import { cloneDeep } from 'lodash';
+import * as tools from './tools';
 
 const backendUrl = 'http://localhost:5556';
 
@@ -10,6 +11,9 @@ interface IAppContext {
 	appTitle: string;
 	flashcards: IFlashcard[];
 	handleToggleFlashcard: (flashcard: IFlashcard) => void;
+	handleSpanishImport: () => void;
+	spanishImportText: string;
+	setSpanishImportText: (text: string) => void;
 }
 
 interface IAppProvider {
@@ -21,6 +25,7 @@ export const AppContext = createContext<IAppContext>({} as IAppContext);
 export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 	const appTitle = 'Info Site';
 	const [flashcards, setFlashcards] = useState<IFlashcard[]>([]);
+	const [spanishImportText, setSpanishImportText] = useState('');
 
 	useEffect(() => {
 		(async () => {
@@ -43,13 +48,19 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 		flashcard.isOpen = !flashcard.isOpen;
 		setFlashcards(cloneDeep(flashcards));
 	};
-
+	const handleSpanishImport = () => {
+		const lines = tools.convertStringBlockToLines(spanishImportText);
+		console.log(lines);
+	};
 	return (
 		<AppContext.Provider
 			value={{
 				appTitle,
 				flashcards,
 				handleToggleFlashcard,
+				handleSpanishImport,
+				spanishImportText,
+				setSpanishImportText
 			}}
 		>
 			{children}
