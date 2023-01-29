@@ -27,21 +27,23 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 	const [flashcards, setFlashcards] = useState<IFlashcard[]>([]);
 	const [spanishImportText, setSpanishImportText] = useState('');
 
+	const loadFlashcards = async () => {
+		const rawFlashcards = (await axios.get(`${backendUrl}/flashcards`))
+			.data;
+		let _flashcards: IFlashcard[] = [];
+		rawFlashcards.forEach((rawFlashcard: IRawFlashcard) => {
+			const _flashcard: IFlashcard = {
+				...rawFlashcard,
+				isOpen: false,
+			};
+			_flashcards.push(_flashcard);
+		});
+		_flashcards = _flashcards.sort((a, b) => b.rank - a.rank);
+		setFlashcards(_flashcards);
+	};
+
 	useEffect(() => {
-		(async () => {
-			const rawFlashcards = (await axios.get(`${backendUrl}/flashcards`))
-				.data;
-			let _flashcards: IFlashcard[] = [];
-			rawFlashcards.forEach((rawFlashcard: IRawFlashcard) => {
-				const _flashcard: IFlashcard = {
-					...rawFlashcard,
-					isOpen: false,
-				};
-				_flashcards.push(_flashcard);
-			});
-			_flashcards = _flashcards.sort((a, b) => b.rank - a.rank);
-			setFlashcards(_flashcards);
-		})();
+		loadFlashcards();
 	}, []);
 
 	const handleToggleFlashcard = (flashcard: IFlashcard) => {
@@ -53,14 +55,12 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 			tools.buildSpanishFlashcardObjs(spanishImportText);
 		try {
 			for (const spanishFlashcard of spanishFlashcards) {
-				await axios.post(
-					`${backendUrl}/flashcards`,
-					spanishFlashcard,
-					{
-						withCredentials: true,
-					}
-				);
+				await axios.post(`${backendUrl}/flashcards`, spanishFlashcard, {
+					withCredentials: true,
+				});
 			}
+			setSpanishImportText('');
+			loadFlashcards();
 		} catch (e: any) {
 			console.log(`ERROR: ${e.message}`);
 		}
