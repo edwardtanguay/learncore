@@ -10,7 +10,6 @@ export const convertStringBlockToLines = (stringBlock: string) => {
 }
 export const buildSpanishFlashcardJsonText = (spanishImportText: string) => {
 	const lines = tools.convertStringBlockToLines(spanishImportText);
-	console.log(lines);
 	const lineBlocks = tools.getLineBlocksFromLines(lines);
 	const json = tools.getSpanishJsonFromLineBlocks(lineBlocks);
 	return json;
@@ -58,6 +57,10 @@ export const getSpanishJsonFromLineBlocks = (lineBlocks: string[][]) => {
 }
 
 export const getDateTime = () => {
-	return 'nnn';
+	const d = new Date();
+	let dateTime = d.toISOString(); // 2023-01-29T19:25:02.232Z
+	dateTime = dateTime.substring(0, 19); // 2023-01-29T19:25:02
+	dateTime = dateTime.replace('T', ' '); // 2023-01-29 19:25:02
+	return dateTime;
 }
 
