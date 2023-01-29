@@ -6,8 +6,8 @@ export const PageImport = () => {
 		useContext(AppContext);
 
 	const formatExampleText = `
-I'm sorry, I do not understand you. I still can't understand you.
-Lo siento, no te entiendo. Todavía no puedo entenderte.
+I'm sorry, I don't understand you. / I still can't understand you.
+Lo siento, no te entiendo. / Todavía no puedo entenderte.
 4.9
 cantUnderstand
 
