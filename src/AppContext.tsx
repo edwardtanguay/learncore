@@ -1,13 +1,15 @@
 import { useState, useEffect } from 'react';
 import { createContext } from 'react';
 import axios from 'axios';
-import {IFlashcard, IRawFlashcard} from './interfaces';
+import { IFlashcard, IRawFlashcard } from './interfaces';
+import { cloneDeep } from 'lodash';
 
 const backendUrl = 'http://localhost:5556';
 
 interface IAppContext {
 	appTitle: string;
-	flashcards: IFlashcard[]
+	flashcards: IFlashcard[];
+	handleToggleFlashcard: (flashcard: IFlashcard) => void;
 }
 
 interface IAppProvider {
@@ -22,24 +24,31 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 
 	useEffect(() => {
 		(async () => {
-			const rawFlashcards = (await axios.get(`${backendUrl}/flashcards`)).data;
+			const rawFlashcards = (await axios.get(`${backendUrl}/flashcards`))
+				.data;
 			const _flashcards: IFlashcard[] = [];
-			rawFlashcards.forEach((rawFlashcard:IRawFlashcard) => {
+			rawFlashcards.forEach((rawFlashcard: IRawFlashcard) => {
 				const _flashcard: IFlashcard = {
 					...rawFlashcard,
-					isOpen: false
-				}
-				_flashcards.push(_flashcard)
+					isOpen: false,
+				};
+				_flashcards.push(_flashcard);
 			});
 			setFlashcards(_flashcards);
 		})();
 	}, []);
 
+	const handleToggleFlashcard = (flashcard: IFlashcard) => {
+		flashcard.isOpen = !flashcard.isOpen;
+		setFlashcards(cloneDeep(flashcards));
+	}
+
 	return (
 		<AppContext.Provider
 			value={{
 				appTitle,
-				flashcards
+				flashcards,
+				handleToggleFlashcard
 			}}
 		>
 			{children}

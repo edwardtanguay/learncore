@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { AppContext } from '../AppContext';
 
 export const PageLearn = () => {
-	const { flashcards } = useContext(AppContext);
+	const { flashcards, handleToggleFlashcard } = useContext(AppContext);
 
 	return (
 		<div className="page pageLearn">
@@ -10,7 +10,7 @@ export const PageLearn = () => {
 				{flashcards.map((flashcard) => {
 					return (
 						<div className="flashcard" key={flashcard.id}>
-							<div className="front">{flashcard.front}</div>
+							<div className="front" onClick={() => handleToggleFlashcard(flashcard)}>{flashcard.front}</div>
 							{flashcard.isOpen && (
 								<div className="back">{flashcard.back}</div>
 							)}

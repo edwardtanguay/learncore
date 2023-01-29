@@ -1,6 +1,6 @@
 - x add rank
 - .. make learn page testable
-	- sort by rank
+	- .. sort by rank
 - implement simple import page
 
 fff1
@@ -8,3 +8,10 @@ bbb1
 
 fff2
 bbb2
+
+
+
+
+- responsive
+- audio link
+- mark as learned
