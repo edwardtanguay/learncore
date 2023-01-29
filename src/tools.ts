@@ -8,11 +8,11 @@ export const convertStringBlockToLines = (stringBlock: string) => {
 		return lines;
 	}
 }
-export const buildSpanishFlashcardJsonText = (spanishImportText: string) => {
+export const buildSpanishFlashcardObjs = (spanishImportText: string) => {
 	const lines = tools.convertStringBlockToLines(spanishImportText);
 	const lineBlocks = tools.getLineBlocksFromLines(lines);
-	const json = tools.getSpanishJsonFromLineBlocks(lineBlocks);
-	return json;
+	const objs = tools.getSpanishObjectsFromLineBlocks(lineBlocks);
+	return objs;
 }
 
 export const getLineBlocksFromLines = (lines: string[]) => {
@@ -39,7 +39,7 @@ export const getLineBlocksFromLines = (lines: string[]) => {
 	return lineBlocks;
 }
 
-export const getSpanishJsonFromLineBlocks = (lineBlocks: string[][]) => {
+export const getSpanishObjectsFromLineBlocks = (lineBlocks: string[][]) => {
 	const objs = [];
 	for (const lineBlock of lineBlocks) {
 		const obj = {
@@ -52,8 +52,7 @@ export const getSpanishJsonFromLineBlocks = (lineBlocks: string[][]) => {
 		}
 		objs.push(obj);
 	}
-	console.log(objs);
-	return JSON.stringify(objs);
+	return objs;
 }
 
 export const getDateTime = () => {

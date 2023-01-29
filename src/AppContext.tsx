@@ -48,9 +48,19 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 		flashcard.isOpen = !flashcard.isOpen;
 		setFlashcards(cloneDeep(flashcards));
 	};
-	const handleSpanishImport = () => {
-		const spanishFlashcards =
-			tools.buildSpanishFlashcardJsonText(spanishImportText);
+	const handleSpanishImport = async () => {
+		const spanishFlashcards = tools.buildSpanishFlashcardObjs(spanishImportText);
+		try {
+				await axios.post(
+				`${backendUrl}/flashcards`,
+				spanishFlashcards[0],
+				{
+					withCredentials: true,
+				}
+			)
+		} catch (e: any) {
+			console.log(`ERROR: ${e.message}`);
+		}
 	};
 	return (
 		<AppContext.Provider
