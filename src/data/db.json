@@ -1,6 +1,7 @@
 {
 	"flashcards": [
 		{
+			"id": 1,
 			"category": "spanish",
 			"subcategory": "wantToLearn",
 			"front": "How to you say the word nnn in Spanish?",
@@ -8,6 +9,7 @@
 			"whenCreated": "2023-01-29 16:46:35"
 		},
 		{
+			"id": 2,
 			"category": "spanish",
 			"subcategory": "cantUnderstand",
 			"front": "The slower you talk, the better I can understand you.",

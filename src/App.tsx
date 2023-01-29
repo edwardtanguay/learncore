@@ -10,8 +10,8 @@ function App() {
 			<h1>Learn Core</h1>
 			<nav>
 				<NavLink to="/dashboard">Dashboard</NavLink>
-				<NavLink to="/flashcards">Flashcards</NavLink>
 				<NavLink to="/learn">Learn</NavLink>
+				<NavLink to="/flashcards">Flashcards</NavLink>
 			</nav>
 
 			<Routes>
