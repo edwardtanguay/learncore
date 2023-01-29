@@ -29,6 +29,7 @@ Lo haré.
 			<form>
 				<div className="row">
 					<textarea
+						autoFocus
 						value={spanishImportText}
 						onChange={(e) => setSpanishImportText(e.target.value)}
 						spellCheck={false}
