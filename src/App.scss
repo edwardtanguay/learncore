@@ -1,3 +1,5 @@
+$flashcardBorderColor: 1px solid #444;
+
 body {
 	background-color: #333;
 	color: #ccc;
@@ -23,42 +25,28 @@ body {
 		}
 	}
 
-	.pageJobs {
-		.jobs {
-			.job {
-				background-color: #222;
-				padding: 1rem;
+	.pageLearn {
+		.flashcards {
+			margin-top: 2rem;
+
+			.flashcard {
+				width: 30rem;
 				margin-bottom: 1rem;
 
-				div {
-					margin-bottom: .5rem;
+				.front {
+					background: #1a1a1a;
+					padding: 1rem;
+					border-top: $flashcardBorderColor;
+					border-left: $flashcardBorderColor;
+					border-right: $flashcardBorderColor;
 				}
 
-				.title {
-					a {
-						color: rgb(176, 146, 91);
-						font-size: 1.5rem;
-					}
-				}
-
-				.company {
-					color: rgb(208, 208, 114);
-				}
-
-				.description {
-					font-style: italic;
-					color: #999;
-				}
-
-				.skills {
-					color: green;
-					font-family: 'Courier New', Courier, monospace;
-				}
-
-				.statusLine {
-					color: rgb(232, 133, 116);
-					font-family: 'Courier New', Courier, monospace;
-					font-weight: bold;
+				.back {
+					background: #111;
+					padding: 1rem;
+					border-bottom: $flashcardBorderColor;
+					border-left: $flashcardBorderColor;
+					border-right: $flashcardBorderColor;
 				}
 			}
 		}
