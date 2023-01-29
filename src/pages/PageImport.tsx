@@ -20,7 +20,7 @@ Lo haré.
 			<form>
 				<div className="row">
 					<label>Spanish Flashcards</label>
-					<textarea></textarea>
+					<textarea spellCheck={false}></textarea>
 				</div>
 				<div className="buttonArea">
 					<button type="button">Import</button>
