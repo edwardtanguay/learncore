@@ -34,6 +34,7 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 				};
 				_flashcards.push(_flashcard);
 			});
+			_flashcards.sort((a, b) => a.rank + b.rank);
 			setFlashcards(_flashcards);
 		})();
 	}, []);
@@ -41,14 +42,14 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 	const handleToggleFlashcard = (flashcard: IFlashcard) => {
 		flashcard.isOpen = !flashcard.isOpen;
 		setFlashcards(cloneDeep(flashcards));
-	}
+	};
 
 	return (
 		<AppContext.Provider
 			value={{
 				appTitle,
 				flashcards,
-				handleToggleFlashcard
+				handleToggleFlashcard,
 			}}
 		>
 			{children}

@@ -4,6 +4,7 @@ export interface IRawFlashcard {
 	subcategory: string,
 	front: string,
 	back: string,
+	rank: number,
 	whenCreated: string
 }
 
