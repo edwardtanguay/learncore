@@ -17,6 +17,60 @@
       "back": "¿Cómo se dice la palabra nnn en español?",
       "rank": 5,
       "whenCreated": "2023-01-29 16:46:35"
+    },
+    {
+      "category": "spanish",
+      "subcategory": "cantUnderstand",
+      "front": "I'm sorry, I don't understand you. / I still can't understand you.",
+      "back": "Lo siento, no te entiendo. / Todavía no puedo entenderte.",
+      "rank": 4.9,
+      "whenCreated": "2023-01-29 19:40:48",
+      "id": 3
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "What time is it?",
+      "back": "¿Qué hora será?",
+      "rank": 4.2,
+      "whenCreated": "2023-01-29 19:40:48",
+      "id": 4
+    },
+    {
+      "category": "spanish",
+      "subcategory": "cantUnderstand",
+      "front": "My Spanish isn't good enough to understand you.",
+      "back": "Mi español no es suficiente para entenderte.",
+      "rank": 4.95,
+      "whenCreated": "2023-01-29 19:40:48",
+      "id": 5
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "I'll do it.",
+      "back": "Lo haré.",
+      "rank": 2.5,
+      "whenCreated": "2023-01-29 19:40:48",
+      "id": 6
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "I need to get some more coffee.",
+      "back": "Necesito tomar un poco más de café.",
+      "rank": 3.8,
+      "whenCreated": "2023-01-29 19:47:48",
+      "id": 7
+    },
+    {
+      "category": "spanish",
+      "subcategory": "cantUnderstand",
+      "front": "Could you repeat what you just said?",
+      "back": "¿Podrías repetir lo que acabas de decir?",
+      "rank": 4.5,
+      "whenCreated": "2023-01-29 19:47:48",
+      "id": 8
     }
   ]
 }
