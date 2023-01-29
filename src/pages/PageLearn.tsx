@@ -6,7 +6,6 @@ export const PageLearn = () => {
 
 	return (
 		<>
-			<p>There are {flashcards.length} flashcards.</p>
 			<div className="flashcards">
 				{flashcards.map(flashcard => {
 					return (
