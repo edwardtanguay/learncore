@@ -26,9 +26,38 @@ body {
 		}
 	}
 
+	.page {
+		margin-top: 2rem;
+	}
+
+	.pageImport {
+		form {
+			.row {
+				label {
+					display: block;
+				}
+
+				textarea {
+					width: 50rem;
+					height: 20rem;
+					background-color: #ccc;
+				}
+			}
+
+			.buttonArea {
+				margin-top: 1rem;
+			}
+		}
+
+		pre {
+			background-color: #222;
+			padding: 1rem;
+			width: 48.5rem;
+		}
+	}
+
 	.pageLearn {
 		.flashcards {
-			margin-top: 2rem;
 
 			.flashcard {
 				width: 30rem;
@@ -43,9 +72,6 @@ body {
 					border-radius: $radius $radius 0 0;
 					color: #999;
 					cursor: pointer;
-					&:hover {
-						color: #bbb;
-					}
 				}
 
 				.back {

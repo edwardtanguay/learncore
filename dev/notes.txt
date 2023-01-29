@@ -1,7 +1,4 @@
-- x add rank
-- .. make learn page testable
-	- .. sort by rank
-- implement simple import page
+- .. implement simple import page
 
 fff1
 bbb1
