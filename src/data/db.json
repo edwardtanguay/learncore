@@ -71,6 +71,222 @@
       "rank": 4.5,
       "whenCreated": "2023-01-29 19:47:48",
       "id": 8
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "I forgot something",
+      "back": "me olvidé de algo",
+      "rank": 3.8,
+      "whenCreated": "2023-01-29 19:54:37",
+      "id": 9
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "We'll see each other tomorrow.",
+      "back": "Nos vemos mañana.",
+      "rank": 2.5,
+      "whenCreated": "2023-01-29 19:54:37",
+      "id": 11
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "I think this feature will be hard to program.",
+      "back": "Creo que esta función será difícil de programar.",
+      "rank": 2.5,
+      "whenCreated": "2023-01-29 19:56:32",
+      "id": 12
+    },
+    {
+      "category": "spanish",
+      "subcategory": "cantUnderstand",
+      "front": "Sorry, you spoke so quickly, I didn't understand.",
+      "back": "Lo siento, hablaste tan rápido que no entendí.",
+      "rank": 4.5,
+      "whenCreated": "2023-01-29 19:59:48",
+      "id": 13
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "It is time for lunch.",
+      "back": "Es hora de almorzar.",
+      "rank": 4.1,
+      "whenCreated": "2023-01-29 20:01:56",
+      "id": 14
+    },
+    {
+      "category": "spanish",
+      "subcategory": "wantToLearn",
+      "front": "What does the word nnn mean?",
+      "back": "¿Qué significa la palabra nnn?",
+      "rank": 5,
+      "whenCreated": "2023-01-29 20:03:29",
+      "id": 15
+    },
+    {
+      "category": "spanish",
+      "subcategory": "wantToLearn",
+      "front": "I have a question.",
+      "back": "Tengo una pregunta.",
+      "rank": 4.8,
+      "whenCreated": "2023-01-29 20:34:27",
+      "id": 16
+    },
+    {
+      "category": "spanish",
+      "subcategory": "cantUnderstand",
+      "front": "What did you say after the word nnn?",
+      "back": "¿Qué dijiste después de la palabra nnn?",
+      "rank": 4.5,
+      "whenCreated": "2023-01-29 20:39:19",
+      "id": 17
+    },
+    {
+      "category": "spanish",
+      "subcategory": "cantUnderstand",
+      "front": "That's what I thought you said.",
+      "back": "Eso es lo que pensé que habías dicho.",
+      "rank": 4.2,
+      "whenCreated": "2023-01-29 20:39:19",
+      "id": 18
+    },
+    {
+      "category": "spanish",
+      "subcategory": "cantUnderstand",
+      "front": "I didn't understand the word nnn.",
+      "back": "No entendí la palabra nnn.",
+      "rank": 4.6,
+      "whenCreated": "2023-01-29 20:40:41",
+      "id": 19
+    },
+    {
+      "category": "spanish",
+      "subcategory": "cantUnderstand",
+      "front": "What does it mean?",
+      "back": "¿Qué significa?",
+      "rank": 4.7,
+      "whenCreated": "2023-01-29 20:41:43",
+      "id": 20
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "We can start with a number of questions that I have.",
+      "back": "Podemos comenzar con una serie de preguntas que tengo.",
+      "rank": 2.5,
+      "whenCreated": "2023-01-29 20:42:38",
+      "id": 21
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "I have to answer the door. I will be right back.",
+      "back": "Tengo que abrir la puerta. Ya vuelvo.",
+      "rank": 3.9,
+      "whenCreated": "2023-01-29 20:44:02",
+      "id": 22
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "we should do that as early as possible",
+      "back": "deberíamos hacerlo lo antes posible",
+      "rank": 2.5,
+      "whenCreated": "2023-01-29 20:48:14",
+      "id": 23
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "see you tomorrow",
+      "back": "Hasta mañana",
+      "rank": 2.5,
+      "whenCreated": "2023-01-29 20:49:44",
+      "id": 24
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "we should do that as fast as possible",
+      "back": "deberíamos hacerlo lo más rápido posible",
+      "rank": 2.5,
+      "whenCreated": "2023-01-29 20:50:47",
+      "id": 25
+    },
+    {
+      "category": "spanish",
+      "subcategory": "cantUnderstand",
+      "front": "Could you repeat that?",
+      "back": "¿Peudes repetirlo?",
+      "rank": 4.8,
+      "whenCreated": "2023-01-29 20:53:03",
+      "id": 26
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "I think that is true.",
+      "back": "Penso que es verdad.",
+      "rank": 2.5,
+      "whenCreated": "2023-01-29 20:55:06",
+      "id": 27
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "I think that is false.",
+      "back": "Creo que es falso.",
+      "rank": 2.5,
+      "whenCreated": "2023-01-29 20:55:06",
+      "id": 28
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "What do you think?",
+      "back": "¿Qué piensas?",
+      "rank": 3.9,
+      "whenCreated": "2023-01-29 20:56:24",
+      "id": 29
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "Are you guys already starting?",
+      "back": "¿Empezáis ya?",
+      "rank": 2.5,
+      "whenCreated": "2023-01-29 20:57:52",
+      "id": 30
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "Do you understand the difference?",
+      "back": "¿Entiendes la diferencia?",
+      "rank": 2.5,
+      "whenCreated": "2023-01-29 20:58:54",
+      "id": 31
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "This is going to take a long time.",
+      "back": "Esto va a llevar mucho tiempo.",
+      "rank": 2.5,
+      "whenCreated": "2023-01-29 21:09:05",
+      "id": 32
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "Unfortunately not.",
+      "back": "Lamentablemente no.",
+      "rank": 2.5,
+      "whenCreated": "2023-01-29 21:37:28",
+      "id": 33
     }
   ]
 }

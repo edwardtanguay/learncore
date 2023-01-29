@@ -6,12 +6,20 @@ export const PageFlashcards = () => {
 
 	return (
 		<div className="page pageFlashcards">
-			<p>There are {flashcards.length} flashcards.</p>
-			<div className="flashcards">
+			<div className="flashcards1">
 				{flashcards.map(flashcard => {
 					return (
 						<div className="flashcard" key={flashcard.id}>
 							<div className="front">{flashcard.front}</div>
+						</div>
+					)
+				})}
+			</div>
+			<div>---</div>
+			<div className="flashcards2">
+				{flashcards.map(flashcard => {
+					return (
+						<div className="flashcard" key={flashcard.id}>
 							<div className="back">{flashcard.back}</div>
 						</div>
 					)
