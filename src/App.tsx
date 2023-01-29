@@ -1,8 +1,8 @@
 import './App.scss';
 import { NavLink, Routes, Route, Navigate } from 'react-router-dom';
-import { PageDashboard } from './components/PageDashboard';
-import { PageJobs } from './components/PageJobs';
-import { PageSkills } from './components/PageSkills';
+import { PageDashboard } from './pages/PageDashboard';
+import { PageJobs } from './pages/PageJobs';
+import { PageSkills } from './pages/PageSkills';
 
 function App() {
 	return (
