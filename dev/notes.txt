@@ -1,1 +1,10 @@
-- .. import page
+- x add rank
+- .. make learn page testable
+	- sort by rank
+- implement simple import page
+
+fff1
+bbb1
+
+fff2
+bbb2

@@ -3,18 +3,20 @@
 		{
 			"id": 1,
 			"category": "spanish",
-			"subcategory": "wantToLearn",
-			"front": "How to you say the word nnn in Spanish?",
-			"back": "¿Cómo se dice la palabra nnn en español?",
-			"whenCreated": "2023-01-29 16:46:35"
+			"subcategory": "cantUnderstand",
+			"front": "The slower you talk, the better I can understand you.",
+			"back": "Cuanto más lento hables, mejor te entenderé.",
+			"rank": 4.1,
+			"whenCreated": "2023-01-29 17:43:22"
 		},
 		{
 			"id": 2,
 			"category": "spanish",
-			"subcategory": "cantUnderstand",
-			"front": "The slower you talk, the better I can understand you.",
-			"back": "Cuanto más lento hables, mejor te entenderé.",
-			"whenCreated": "2023-01-29 17:43:22"
+			"subcategory": "wantToLearn",
+			"front": "How to you say the word nnn in Spanish?",
+			"back": "¿Cómo se dice la palabra nnn en español?",
+			"rank": 5.0,
+			"whenCreated": "2023-01-29 16:46:35"
 		}
 	]
 }

@@ -5,7 +5,7 @@ export const PageFlashcards = () => {
 	const { flashcards } = useContext(AppContext);
 
 	return (
-		<>
+		<div className="page pageFlashcards">
 			<p>There are {flashcards.length} flashcards.</p>
 			<div className="flashcards">
 				{flashcards.map(flashcard => {
@@ -17,6 +17,6 @@ export const PageFlashcards = () => {
 					)
 				})}
 			</div>
-		</>
+		</div>
 	);
 };
