@@ -7,13 +7,15 @@ export const PageLearn = () => {
 	return (
 		<div className="page pageLearn">
 			<div className="flashcards">
-				{flashcards.map(flashcard => {
+				{flashcards.map((flashcard) => {
 					return (
 						<div className="flashcard" key={flashcard.id}>
 							<div className="front">{flashcard.front}</div>
-							<div className="back">{flashcard.back}</div>
+							{flashcard.isOpen && (
+								<div className="back">{flashcard.back}</div>
+							)}
 						</div>
-					)
+					);
 				})}
 			</div>
 		</div>
