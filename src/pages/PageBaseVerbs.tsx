@@ -49,23 +49,43 @@ export const PageBaseVerbs = () => {
 	console.log(conjugatedVerbs);
 
 	return (
-		<>
-			<table>
-				<tbody>
-					{conjugatedVerbs.map((cv, i) => {
-						return (
+		<div className="page pageBaseVerbs">
+			{conjugatedVerbs.map((cv, i) => {
+				return (
+					<table>
+						<tbody>
 							<tr>
 								<td>{cv.verb}</td>
-								<td>{cv.base}<span>ando</span></td>
-								<td>{cv.base}<span>ado</span></td>
+								<td>
+									{cv.base}
+									<span>ando</span>
+								</td>
+								<td>
+									{cv.base}
+									<span>ado</span>
+								</td>
 								<td></td>
 								<td></td>
 								<td></td>
 							</tr>
-						);
-					})}
-				</tbody>
-			</table>
-		</>
+							<tr>
+								<td>{cv.verb}</td>
+								<td>
+									{cv.base}
+									<span>ando</span>
+								</td>
+								<td>
+									{cv.base}
+									<span>ado</span>
+								</td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				);
+			})}
+		</div>
 	);
 };
