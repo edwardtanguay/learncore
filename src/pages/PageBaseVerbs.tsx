@@ -55,12 +55,12 @@ export const PageBaseVerbs = () => {
 					{conjugatedVerbs.map((cv, i) => {
 						return (
 							<tr>
-								<td>nnn</td>
-								<td>nnn</td>
-								<td>nnn</td>
-								<td>nnn</td>
-								<td>nnn</td>
-								<td>nnn</td>
+								<td>{cv.verb}</td>
+								<td>{cv.base}<span>ando</span></td>
+								<td>{cv.base}<span>ado</span></td>
+								<td></td>
+								<td></td>
+								<td></td>
 							</tr>
 						);
 					})}
