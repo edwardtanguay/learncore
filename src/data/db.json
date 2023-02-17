@@ -13,8 +13,8 @@
       "id": 2,
       "category": "spanish",
       "subcategory": "wantToLearn",
-      "front": "How to you say the word nnn in Spanish?",
-      "back": "¿Cómo se dice la palabra nnn en español?",
+      "front": "How to you say the word \"above\" in Spanish?",
+      "back": "¿Cómo se dice la palabra \"above\" en español?",
       "rank": 5,
       "whenCreated": "2023-01-29 16:46:35"
     },
@@ -120,8 +120,8 @@
     {
       "category": "spanish",
       "subcategory": "wantToLearn",
-      "front": "What does the word nnn mean?",
-      "back": "¿Qué significa la palabra nnn?",
+      "front": "What does the word \"tampoco\" mean?",
+      "back": "¿Qué significa la palabra \"tampoco\"?",
       "rank": 5,
       "whenCreated": "2023-01-29 20:03:29",
       "id": 15
@@ -287,6 +287,15 @@
       "rank": 2.5,
       "whenCreated": "2023-01-29 21:37:28",
       "id": 33
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "It looks like your live coding showed the studens the inicial steps in case they want to integrate Auth0 into their final projects.",
+      "back": "Parece que tu live coding les mostró a los estudiantes los pasos iniciales en caso de que quisieran integrar Auth0 en su final projects.",
+      "rank": 2.5,
+      "whenCreated": "2023-02-01 19:19:28",
+      "id": 34
     }
   ]
 }
