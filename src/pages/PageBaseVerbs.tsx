@@ -1,11 +1,12 @@
 import { IConjugatedVerb, IConjugationEndings } from '../interfaces';
 import { conjugatedVerbs } from '../parser';
 
-export const PageBaseVerbs = () => {
+// also link: https://es.bab.la/diccionario/espanol-ingles/permitimos
 
+export const PageBaseVerbs = () => {
 	const getTatoebaLink = (cv: IConjugatedVerb, ending: string) => {
 		return `https://tatoeba.org/de/sentences/search?from=spa&query=%3D${cv.base}${ending}&to=eng`;
-	}
+	};
 	return (
 		<div className="page pageBaseVerbs">
 			{conjugatedVerbs.map((cv, i) => {
@@ -22,8 +23,13 @@ export const PageBaseVerbs = () => {
 									</a>
 								</td>
 								<td>
-									{cv.base}
-									<span>{cv.ce.part[0]}</span>
+									<a
+										target="_blank"
+										href={getTatoebaLink(cv, cv.ce.part[0])}
+									>
+										{cv.base}
+										<span>{cv.ce.part[0]}</span>
+									</a>
 								</td>
 								<td>
 									{cv.base}
@@ -48,7 +54,10 @@ export const PageBaseVerbs = () => {
 										<td key={i}>
 											<a
 												target="_blank"
-												href={getTatoebaLink(cv, cv.ce.impe[i])}
+												href={getTatoebaLink(
+													cv,
+													cv.ce.impe[i]
+												)}
 											>
 												{cv.base}
 												<span>{cv.ce.impe[i]}</span>
