@@ -43,6 +43,11 @@ body {
 			td.verb {
 				background-color: #111;
 				font-weight: bold;
+
+				a {
+					text-decoration: none;
+					color: yellow;
+				}
 			}
 
 			tr.part {

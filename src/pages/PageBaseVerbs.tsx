@@ -14,7 +14,7 @@ export const PageBaseVerbs = () => {
 						<tbody>
 
 							<tr className="part">
-								<td className="verb">{cv.verb}</td>
+								<td className="verb"><a target="_blank" href={`https://www.123teachme.com/spanish_verb_conjugation/${cv.verb}`}>{cv.verb}</a></td>
 								<td>
 									{cv.base}
 									<span>{cv.ce.part[0]}</span>

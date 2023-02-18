@@ -296,6 +296,24 @@
       "rank": 2.5,
       "whenCreated": "2023-02-01 19:19:28",
       "id": 34
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "If you had told me, I could have avoided this mistake.",
+      "back": "Si me lo hubieras dicho habría podido evitar este error.",
+      "rank": 2.5,
+      "whenCreated": "2023-02-18 21:09:00",
+      "id": 35
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "",
+      "back": "",
+      "rank": 2.5,
+      "whenCreated": "2023-02-18 21:09:00",
+      "id": 36
     }
   ]
 }
