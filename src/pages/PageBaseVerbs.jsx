@@ -1,5 +1,5 @@
 export const PageBaseVerbs = () => {
-	const baseVerbs = {
+	const conjugationEndings = {
 		ar: {
 			part: ['ando', 'ado'],
 			pres: ['o', 'as', 'a', 'amos', 'áis', 'an'],
@@ -31,13 +31,14 @@ export const PageBaseVerbs = () => {
 
 	const verbs = ['hablar', 'comer', 'vivir'];
 
-	const conjugateVerb = (verb: string) => {
+	const conjugateVerb = (verb) => {
 		const ending = verb.slice(-2);
 		const base = verb.slice(0, -2);
 		return {
 			verb,
 			ending,
 			base,
+			ce: conjugationEndings[ending]
 		};
 	};
 
@@ -52,32 +53,45 @@ export const PageBaseVerbs = () => {
 		<div className="page pageBaseVerbs">
 			{conjugatedVerbs.map((cv, i) => {
 				return (
-					<table>
+					<table key={i}>
 						<tbody>
-							<tr>
+							{/* base and particles */}
+							<tr className="pret">
 								<td className="verb">{cv.verb}</td>
 								<td>
 									{cv.base}
-									<span>ando</span>
+									<span>{cv.ce.part[0]}</span>
 								</td>
 								<td>
 									{cv.base}
-									<span>ado</span>
+									<span>{cv.ce.part[1]}</span>
 								</td>
 							</tr>
-							<tr>
-								<td>{cv.verb}</td>
+							<tr className="pres">
 								<td>
 									{cv.base}
-									<span>ando</span>
+									<span>{cv.ce.pres[0]}</span>
 								</td>
 								<td>
 									{cv.base}
-									<span>ado</span>
+									<span>{cv.ce.pres[1]}</span>
 								</td>
-								<td></td>
-								<td></td>
-								<td></td>
+								<td>
+									{cv.base}
+									<span>{cv.ce.pres[2]}</span>
+								</td>
+								<td>
+									{cv.base}
+									<span>{cv.ce.pres[3]}</span>
+								</td>
+								<td>
+									{cv.base}
+									<span>{cv.ce.pres[4]}</span>
+								</td>
+								<td>
+									{cv.base}
+									<span>{cv.ce.pres[5]}</span>
+								</td>
 							</tr>
 						</tbody>
 					</table>
