@@ -1,4 +1,4 @@
-import { IConjugatedVerb, IConjugationEndings } from "./interfaces";
+import { IConjugatedVerb, IConjugationEndings, IVerb } from "./interfaces";
 import * as qstr from './qtools/qstr';
 
 export const verbDefinitions = `
@@ -22,19 +22,22 @@ tener: tien-,1tengo,4-,5- ; - ; tuv- // tendr- ; tendr- ; teng- // - ; -
 incluir: incluy-,4-,5- ; - ; 3incluy-, 6incluy- // - ; - ; incluy- // incluyendo ; -	
 `;
 
-const getRegularVerbs = (verbDefinitions: string) => {
+const getRegularVerbs = (verbDefinitions: string ): IVerb[] => {
 	const lines = qstr.convertStringBlockToLines(verbDefinitions);
-	const ra: string[] = [];
+	const ra: IVerb[] = [];
 	for (const line of lines) {
 		if (!qstr.contains(line, ' ') && !line.startsWith('---') && !qstr.isEmpty(line)) {
-			ra.push(line);
+			ra.push({
+				verbName: line,
+				infos: []
+			});
 		}
 	}
 	return ra;
 }
 
-export const regularVerbs: string[] = getRegularVerbs(verbDefinitions); 
-console.log(regularVerbs);
+export const verbs: IVerb[] = getRegularVerbs(verbDefinitions); 
+console.log(verbs);
 
 const conjugationEndings: IConjugationEndings = {
 	ar: {
@@ -66,9 +69,9 @@ const conjugationEndings: IConjugationEndings = {
 	},
 };
 
-export const conjugateVerb  = (verb: string) => {
-	const ending = verb.slice(-2);
-	const base = verb.slice(0, -2);
+export const conjugateVerb  = (verb: IVerb) => {
+	const ending = verb.verbName.slice(-2);
+	const base = verb.verbName.slice(0, -2);
 	return {
 		verb,
 		ending,
@@ -78,7 +81,7 @@ export const conjugateVerb  = (verb: string) => {
 };
 
 export const conjugatedVerbs:IConjugatedVerb[] = [];
-for (const verb of regularVerbs) {
+for (const verb of verbs) {
 	const conjugatedVerb = conjugateVerb(verb);
 	conjugatedVerbs.push(conjugatedVerb);
 }

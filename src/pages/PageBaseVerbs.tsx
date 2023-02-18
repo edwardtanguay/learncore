@@ -14,7 +14,7 @@ export const PageBaseVerbs = () => {
 						<tbody>
 
 							<tr className="part">
-								<td className="verb"><a target="_blank" href={`https://www.123teachme.com/spanish_verb_conjugation/${cv.verb}`}>{cv.verb}</a></td>
+								<td className="verb"><a target="_blank" href={`https://www.123teachme.com/spanish_verb_conjugation/${cv.verb.verbName}`}>{cv.verb.verbName}</a></td>
 								<td>
 									{cv.base}
 									<span>{cv.ce.part[0]}</span>
@@ -62,7 +62,7 @@ export const PageBaseVerbs = () => {
 								{[...Array(6)].map((x, i) => {
 									return (
 										<td key={i}>
-											{cv.verb}
+											{cv.verb.verbName}
 											<span>{cv.ce.futu[i]}</span>
 										</td>
 									);
@@ -73,7 +73,7 @@ export const PageBaseVerbs = () => {
 								{[...Array(6)].map((x, i) => {
 									return (
 										<td key={i}>
-											{cv.verb}
+											{cv.verb.verbName}
 											<span>{cv.ce.cond[i]}</span>
 										</td>
 									);

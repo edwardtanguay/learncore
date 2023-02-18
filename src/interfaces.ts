@@ -25,8 +25,13 @@ export type IConjugationEnding = {
 export type IConjugationEndings = { [key in 'ar' | 'er' | 'ir']: IConjugationEnding }
 
 export type IConjugatedVerb = {
-	verb: string;
+	verb: IVerb;
 	ending: string
 	base: string
 	ce: IConjugationEnding
+}
+
+export type IVerb = {
+	verbName: string,
+	infos: string[]
 }
