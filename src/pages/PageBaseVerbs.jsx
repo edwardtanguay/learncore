@@ -56,7 +56,7 @@ export const PageBaseVerbs = () => {
 					<table key={i}>
 						<tbody>
 
-							<tr className="pret">
+							<tr className="part">
 								<td className="verb">{cv.verb}</td>
 								<td>
 									{cv.base}

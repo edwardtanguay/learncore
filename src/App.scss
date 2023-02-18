@@ -45,23 +45,30 @@ body {
 				font-weight: bold;
 			}
 
-			tr.pret {
+			tr.part {
 				span {
-					color: yellow;
+					color: rgb(148, 148, 62);
 				}
 			}
 
 			tr.pres {
 				span {
-					color: rgb(102, 102, 177);
+					color: rgb(59, 150, 59);
 				}
 			}
 
 			tr.impe {
 				span {
-					color: orange;
+					color: rgb(189, 135, 35);
 				}
 			}
+
+			tr.pret {
+				span {
+					color: rgb(102, 102, 177);
+				}
+			}
+
 		}
 	}
 
