@@ -2,7 +2,7 @@ import { IConjugatedVerb, IConjugationEndings, IVerb } from "./interfaces";
 import * as qstr from './qtools/qstr';
 
 export const verbDefinitions = `
-recordar: o>ue,4-,5- ; - ; - // - ; - ; o>eu,4-,5- // - ; - 
+recordar: o>ue,4-,5- ; - ; - // - ; - ; o>ue,4-,5- // - ; - 
 gritar
 permitir
 hablar

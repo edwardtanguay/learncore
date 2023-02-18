@@ -15,7 +15,13 @@ export const PageBaseVerbs = () => {
 						{cv.verb.kind === 'irregular' ? (
 							<div className="irregularVerbArea">
 								<div className="verbName">
-									{cv.verb.verbName} ({cv.verb.infos[0]})
+											<a
+												target="_blank"
+												href={`https://www.123teachme.com/spanish_verb_conjugation/${cv.verb.verbName}`}
+											>
+												{cv.verb.verbName}
+											</a>
+									<span>{cv.verb.infos[0]}</span>
 								</div>
 								<div className="infos">
 									{cv.verb.infos.map((info, i) => {

@@ -31,6 +31,36 @@ body {
 	}
 
 	.pageBaseVerbs {
+
+		.irregularVerbArea {
+			margin-bottom: 1rem;
+
+			.verbName {
+				a {
+					font-weight: bold;
+					color: #ccc;
+					text-decoration: none;
+				}
+
+				span {
+					background-color: #2c2c2c;
+					padding: .5rem;
+					color: #777;
+					font-weight: normal;
+					display: inline-block;
+					margin-left: .5rem;
+				}
+			}
+
+			.infos {
+				margin-top: .5rem;
+				margin-left: .5rem;
+				background-color: #2c2c2c;
+				padding: .5rem;
+				color: #777;
+			}
+		}
+
 		table {
 			margin-bottom: 1rem;
 
