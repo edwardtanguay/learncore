@@ -32,8 +32,13 @@ export const PageBaseVerbs = () => {
 									</a>
 								</td>
 								<td>
-									{cv.base}
-									<span>{cv.ce.part[1]}</span>
+									<a
+										target="_blank"
+										href={getTatoebaLink(cv, cv.ce.part[1])}
+									>
+										{cv.base}
+										<span>{cv.ce.part[1]}</span>
+									</a>
 								</td>
 							</tr>
 
