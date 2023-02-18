@@ -55,7 +55,7 @@ export const PageBaseVerbs = () => {
 				return (
 					<table key={i}>
 						<tbody>
-							{/* base and particles */}
+
 							<tr className="pret">
 								<td className="verb">{cv.verb}</td>
 								<td>
@@ -67,31 +67,27 @@ export const PageBaseVerbs = () => {
 									<span>{cv.ce.part[1]}</span>
 								</td>
 							</tr>
+
 							<tr className="pres">
-								<td>
-									{cv.base}
-									<span>{cv.ce.pres[0]}</span>
-								</td>
-								<td>
-									{cv.base}
-									<span>{cv.ce.pres[1]}</span>
-								</td>
-								<td>
-									{cv.base}
-									<span>{cv.ce.pres[2]}</span>
-								</td>
-								<td>
-									{cv.base}
-									<span>{cv.ce.pres[3]}</span>
-								</td>
-								<td>
-									{cv.base}
-									<span>{cv.ce.pres[4]}</span>
-								</td>
-								<td>
-									{cv.base}
-									<span>{cv.ce.pres[5]}</span>
-								</td>
+								{[...Array(6)].map((x, i) => {
+									return (
+										<td key={i}>
+											{cv.base}
+											<span>{cv.ce.pres[i]}</span>
+										</td>
+									);
+								})}
+							</tr>
+
+							<tr className="impe">
+								{[...Array(6)].map((x, i) => {
+									return (
+										<td key={i}>
+											{cv.base}
+											<span>{cv.ce.impe[i]}</span>
+										</td>
+									);
+								})}
 							</tr>
 						</tbody>
 					</table>
