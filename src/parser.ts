@@ -44,7 +44,7 @@ const conjugationEndings: IConjugationEndings = {
 		part: ['ando', 'ado'],
 		pres: ['o', 'as', 'a', 'amos', 'áis', 'an'],
 		impe: ['aba', 'abas', 'aba', 'ábabos', 'abais', 'aban'],
-		pret: ['é', 'aste', 'ó', 'amos', 'asteis', 'arán'],
+		pret: ['é', 'aste', 'ó', 'amos', 'asteis', 'aron'],
 		futu: ['é', 'ás', 'á', 'emos', 'éis', 'án'],
 		cond: ['ía', 'ías', 'ía', 'íamos', 'íais', 'ían'],
 		subj: ['e', 'es', 'e', 'emos', 'éis', 'en'],

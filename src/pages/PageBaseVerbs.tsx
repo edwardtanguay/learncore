@@ -1,7 +1,11 @@
-import { IConjugationEndings } from '../interfaces';
+import { IConjugatedVerb, IConjugationEndings } from '../interfaces';
 import { conjugatedVerbs } from '../parser';
 
 export const PageBaseVerbs = () => {
+
+	const getTatoebaLink = (cv: IConjugatedVerb, i: number) => {
+		return `https://tatoeba.org/de/sentences/search?from=spa&query=%3D${cv.base}${cv.ce.impe[i]}&to=eng`;
+	}
 	return (
 		<div className="page pageBaseVerbs">
 			{conjugatedVerbs.map((cv, i) => {
@@ -44,7 +48,7 @@ export const PageBaseVerbs = () => {
 										<td key={i}>
 											<a
 												target="_blank"
-												href={`https://tatoeba.org/de/sentences/search?from=spa&query=%3D${cv.base}${cv.ce.impe[i]}&to=eng`}
+												href={getTatoebaLink(cv, i)}
 											>
 												{cv.base}
 												<span>{cv.ce.impe[i]}</span>
