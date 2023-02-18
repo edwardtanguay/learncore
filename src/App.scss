@@ -117,8 +117,13 @@ body {
 			}
 
 			tr.subj {
-				span {
-					color: rgb(204, 96, 181);
+				a {
+					text-decoration: none;
+					color: #ccc;
+
+					span {
+						color: rgb(204, 96, 181);
+					}
 				}
 			}
 
