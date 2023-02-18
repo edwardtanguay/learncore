@@ -1,4 +1,28 @@
 export const PageBaseVerbs = () => {
+
+	const verbs = `
+hablar
+evitar
+llamar
+notar
+
+comer
+
+vivir
+permitir
+---------------------------
+recordar: o>ue,4-,5- ; - ; - // - ; - ; o>eu,4-,5- // - ; - 
+llegar: - ; - ; 1llegué // - ; - ; llegu- // - ; -
+
+hacer: 1hago ; hac- ; hic-,1hice,3hizo // har- ; har- ; hag- // - ; hecho
+volver: vuelv-,4-,5- ; - ; - // - ; - ; vuelv-,4-,5- // - ; vuelto
+tener: tien-,1tengo,4-,5- ; - ; tuv- // tendr- ; tendr- ; teng- // - ; -
+
+incluir: incluy-,4-,5- ; - ; 3incluy-, 6incluy- // - ; - ; incluy- // incluyendo ; -	
+`;
+
+	regularVerbs = [];
+
 	const conjugationEndings = {
 		ar: {
 			part: ['ando', 'ado'],
@@ -29,8 +53,6 @@ export const PageBaseVerbs = () => {
 		},
 	};
 
-	const verbs = ['hablar', 'comer', 'vivir'];
-
 	const conjugateVerb = (verb) => {
 		const ending = verb.slice(-2);
 		const base = verb.slice(0, -2);
@@ -43,7 +65,7 @@ export const PageBaseVerbs = () => {
 	};
 
 	const conjugatedVerbs = [];
-	for (const verb of verbs) {
+	for (const verb of regularVerbs) {
 		const conjugatedVerb = conjugateVerb(verb);
 		conjugatedVerbs.push(conjugatedVerb);
 	}
