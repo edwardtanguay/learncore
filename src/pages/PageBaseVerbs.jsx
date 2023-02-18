@@ -89,6 +89,50 @@ export const PageBaseVerbs = () => {
 									);
 								})}
 							</tr>
+
+							<tr className="pret">
+								{[...Array(6)].map((x, i) => {
+									return (
+										<td key={i}>
+											{cv.base}
+											<span>{cv.ce.pret[i]}</span>
+										</td>
+									);
+								})}
+							</tr>
+
+							<tr className="futu">
+								{[...Array(6)].map((x, i) => {
+									return (
+										<td key={i}>
+											{cv.verb}
+											<span>{cv.ce.futu[i]}</span>
+										</td>
+									);
+								})}
+							</tr>
+
+							<tr className="cond">
+								{[...Array(6)].map((x, i) => {
+									return (
+										<td key={i}>
+											{cv.verb}
+											<span>{cv.ce.cond[i]}</span>
+										</td>
+									);
+								})}
+							</tr>
+
+							<tr className="subj">
+								{[...Array(6)].map((x, i) => {
+									return (
+										<td key={i}>
+											{cv.base}
+											<span>{cv.ce.subj[i]}</span>
+										</td>
+									);
+								})}
+							</tr>
 						</tbody>
 					</table>
 				);

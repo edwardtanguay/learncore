@@ -37,7 +37,7 @@ body {
 			td {
 				background-color: #222;
 				padding: .5rem;
-				width: 5rem;
+				width: 5.5rem;
 			}
 
 			td.verb {
@@ -66,6 +66,24 @@ body {
 			tr.pret {
 				span {
 					color: rgb(102, 102, 177);
+				}
+			}
+
+			tr.futu {
+				span {
+					color: rgb(146, 59, 59);
+				}
+			}
+
+			tr.cond {
+				span {
+					color: rgb(150, 4, 4);
+				}
+			}
+
+			tr.subj {
+				span {
+					color: rgb(204, 96, 181);
 				}
 			}
 
