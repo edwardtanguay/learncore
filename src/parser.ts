@@ -2,6 +2,10 @@ import { IConjugatedVerb, IConjugationEndings, IVerb } from "./interfaces";
 import * as qstr from './qtools/qstr';
 
 export const verbDefinitions = `
+unir
+separar
+poder: o>ue,4-,5-;-;pud-,1pude,3pudo//podr-;podr-;o>ue,4-,5- // pudiendo; -
+crear
 recordar: o>ue,4-,5- ; - ; - // - ; - ; o>ue,4-,5- // - ; - 
 gritar
 permitir
