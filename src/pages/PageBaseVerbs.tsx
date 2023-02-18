@@ -4,8 +4,8 @@ import { conjugatedVerbs } from '../parser';
 // also link: https://es.bab.la/diccionario/espanol-ingles/permitimos
 
 export const PageBaseVerbs = () => {
-	const getTatoebaLink = (cv: IConjugatedVerb, ending: string) => {
-		return `https://tatoeba.org/de/sentences/search?from=spa&query=%3D${cv.base}${ending}&to=eng`;
+	const getTatoebaLink = (conjugatedBase: string, ending: string) => {
+		return `https://tatoeba.org/de/sentences/search?from=spa&query=%3D${conjugatedBase}${ending}&to=eng`;
 	};
 	return (
 		<div className="page pageBaseVerbs">
@@ -25,7 +25,7 @@ export const PageBaseVerbs = () => {
 								<td>
 									<a
 										target="_blank"
-										href={getTatoebaLink(cv, cv.ce.part[0])}
+										href={getTatoebaLink(cv.base, cv.ce.part[0])}
 									>
 										{cv.base}
 										<span>{cv.ce.part[0]}</span>
@@ -34,7 +34,7 @@ export const PageBaseVerbs = () => {
 								<td>
 									<a
 										target="_blank"
-										href={getTatoebaLink(cv, cv.ce.part[1])}
+										href={getTatoebaLink(cv.base, cv.ce.part[1])}
 									>
 										{cv.base}
 										<span>{cv.ce.part[1]}</span>
@@ -49,7 +49,7 @@ export const PageBaseVerbs = () => {
 											<a
 												target="_blank"
 												href={getTatoebaLink(
-													cv,
+													cv.base,
 													cv.ce.pres[i]
 												)}
 											>
@@ -68,7 +68,7 @@ export const PageBaseVerbs = () => {
 											<a
 												target="_blank"
 												href={getTatoebaLink(
-													cv,
+													cv.base,
 													cv.ce.impe[i]
 												)}
 											>
@@ -87,7 +87,7 @@ export const PageBaseVerbs = () => {
 											<a
 												target="_blank"
 												href={getTatoebaLink(
-													cv,
+													cv.base,
 													cv.ce.pret[i]
 												)}
 											>
@@ -106,11 +106,11 @@ export const PageBaseVerbs = () => {
 											<a
 												target="_blank"
 												href={getTatoebaLink(
-													cv,
+													cv.verb.verbName,
 													cv.ce.futu[i]
 												)}
 											>
-												{cv.base}
+												{cv.verb.verbName}
 												<span>{cv.ce.futu[i]}</span>
 											</a>
 										</td>
@@ -122,8 +122,16 @@ export const PageBaseVerbs = () => {
 								{[...Array(6)].map((x, i) => {
 									return (
 										<td key={i}>
-											{cv.verb.verbName}
-											<span>{cv.ce.cond[i]}</span>
+											<a
+												target="_blank"
+												href={getTatoebaLink(
+													cv.verb.verbName,
+													cv.ce.cond[i]
+												)}
+											>
+												{cv.verb.verbName}
+												<span>{cv.ce.cond[i]}</span>
+											</a>
 										</td>
 									);
 								})}

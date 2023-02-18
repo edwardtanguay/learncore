@@ -106,8 +106,13 @@ body {
 			}
 
 			tr.cond {
-				span {
-					color: rgb(150, 4, 4);
+				a {
+					text-decoration: none;
+					color: #ccc;
+
+					span {
+						color: rgb(150, 4, 4);
+					}
 				}
 			}
 
