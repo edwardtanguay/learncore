@@ -1,6 +1,8 @@
 import { IConjugatedVerb, IConjugationEndings } from "./interfaces";
+import * as qstr from './qtools/qstr';
 
 export const verbDefinitions = `
+permitir
 hablar
 evitar
 llamar
@@ -9,7 +11,6 @@ notar
 comer
 
 vivir
-permitir
 ---------------------------
 recordar: o>ue,4-,5- ; - ; - // - ; - ; o>eu,4-,5- // - ; - 
 llegar: - ; - ; 1llegué // - ; - ; llegu- // - ; -
@@ -22,10 +23,18 @@ incluir: incluy-,4-,5- ; - ; 3incluy-, 6incluy- // - ; - ; incluy- // incluyendo
 `;
 
 const getRegularVerbs = (verbDefinitions: string) => {
-	return ['comer', 'vivir'];
+	const lines = qstr.convertStringBlockToLines(verbDefinitions);
+	const ra: string[] = [];
+	for (const line of lines) {
+		if (!qstr.contains(line, ' ') && !line.startsWith('---') && !qstr.isEmpty(line)) {
+			ra.push(line);
+		}
+	}
+	return ra;
 }
 
 export const regularVerbs: string[] = getRegularVerbs(verbDefinitions); 
+console.log(regularVerbs);
 
 const conjugationEndings: IConjugationEndings = {
 	ar: {
