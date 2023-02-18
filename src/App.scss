@@ -33,6 +33,17 @@ body {
 	.pageBaseVerbs {
 		table {
 			margin-bottom: 1rem;
+			td {
+				background-color: #222;
+				padding: .5rem;
+			}
+			td.verb {
+				background-color: #111;
+				font-weight: bold;
+			}
+			span {
+				color: red;
+			}
 		}
 	}
 
