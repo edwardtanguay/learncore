@@ -84,8 +84,13 @@ body {
 			}
 
 			tr.pret {
-				span {
+				a {
+					text-decoration: none;
+					color: #ccc;
+
+					span {
 					color: rgb(102, 102, 177);
+					}
 				}
 			}
 
