@@ -103,8 +103,16 @@ export const PageBaseVerbs = () => {
 								{[...Array(6)].map((x, i) => {
 									return (
 										<td key={i}>
-											{cv.verb.verbName}
-											<span>{cv.ce.futu[i]}</span>
+											<a
+												target="_blank"
+												href={getTatoebaLink(
+													cv,
+													cv.ce.futu[i]
+												)}
+											>
+												{cv.base}
+												<span>{cv.ce.futu[i]}</span>
+											</a>
 										</td>
 									);
 								})}

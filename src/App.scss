@@ -89,14 +89,19 @@ body {
 					color: #ccc;
 
 					span {
-					color: rgb(102, 102, 177);
+						color: rgb(102, 102, 177);
 					}
 				}
 			}
 
 			tr.futu {
-				span {
-					color: rgb(146, 59, 59);
+				a {
+					text-decoration: none;
+					color: #ccc;
+
+					span {
+						color: rgb(146, 59, 59);
+					}
 				}
 			}
 
