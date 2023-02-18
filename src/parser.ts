@@ -2,6 +2,8 @@ import { IConjugatedVerb, IConjugationEndings, IVerb } from "./interfaces";
 import * as qstr from './qtools/qstr';
 
 export const verbDefinitions = `
+recordar: o>ue,4-,5- ; - ; - // - ; - ; o>eu,4-,5- // - ; - 
+gritar
 permitir
 hablar
 evitar
@@ -11,8 +13,6 @@ notar
 comer
 
 vivir
----------------------------
-recordar: o>ue,4-,5- ; - ; - // - ; - ; o>eu,4-,5- // - ; - 
 llegar: - ; - ; 1llegué // - ; - ; llegu- // - ; -
 
 hacer: 1hago ; hac- ; hic-,1hice,3hizo // har- ; har- ; hag- // - ; hecho
@@ -22,21 +22,31 @@ tener: tien-,1tengo,4-,5- ; - ; tuv- // tendr- ; tendr- ; teng- // - ; -
 incluir: incluy-,4-,5- ; - ; 3incluy-, 6incluy- // - ; - ; incluy- // incluyendo ; -	
 `;
 
-const getRegularVerbs = (verbDefinitions: string ): IVerb[] => {
+const getRegularVerbs = (verbDefinitions: string): IVerb[] => {
 	const lines = qstr.convertStringBlockToLines(verbDefinitions);
 	const ra: IVerb[] = [];
 	for (const line of lines) {
 		if (!qstr.contains(line, ' ') && !line.startsWith('---') && !qstr.isEmpty(line)) {
 			ra.push({
 				verbName: line,
+				kind: 'regular',
 				infos: []
 			});
+		} else {
+			if (!qstr.isEmpty(line)) {
+				const theVerb = qstr.breakIntoParts(line, ':')[0]
+				ra.push({
+					verbName: theVerb,
+					kind: 'irregular',
+					infos: []
+				});
+			}
 		}
 	}
 	return ra;
 }
 
-export const verbs: IVerb[] = getRegularVerbs(verbDefinitions); 
+export const verbs: IVerb[] = getRegularVerbs(verbDefinitions);
 console.log(verbs);
 
 const conjugationEndings: IConjugationEndings = {
@@ -69,7 +79,7 @@ const conjugationEndings: IConjugationEndings = {
 	},
 };
 
-export const conjugateVerb  = (verb: IVerb) => {
+export const conjugateVerb = (verb: IVerb) => {
 	const ending = verb.verbName.slice(-2);
 	const base = verb.verbName.slice(0, -2);
 	return {
@@ -80,7 +90,7 @@ export const conjugateVerb  = (verb: IVerb) => {
 	};
 };
 
-export const conjugatedVerbs:IConjugatedVerb[] = [];
+export const conjugatedVerbs: IConjugatedVerb[] = [];
 for (const verb of verbs) {
 	const conjugatedVerb = conjugateVerb(verb);
 	conjugatedVerbs.push(conjugatedVerb);

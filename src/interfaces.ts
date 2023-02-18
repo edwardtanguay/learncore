@@ -33,5 +33,6 @@ export type IConjugatedVerb = {
 
 export type IVerb = {
 	verbName: string,
+	kind: string,
 	infos: string[]
 }

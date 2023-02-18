@@ -11,152 +11,176 @@ export const PageBaseVerbs = () => {
 		<div className="page pageBaseVerbs">
 			{conjugatedVerbs.map((cv, i) => {
 				return (
-					<table key={i}>
-						<tbody>
-							<tr className="part">
-								<td className="verb">
-									<a
-										target="_blank"
-										href={`https://www.123teachme.com/spanish_verb_conjugation/${cv.verb.verbName}`}
-									>
-										{cv.verb.verbName}
-									</a>
-								</td>
-								<td>
-									<a
-										target="_blank"
-										href={getTatoebaLink(cv.base, cv.ce.part[0])}
-									>
-										{cv.base}
-										<span>{cv.ce.part[0]}</span>
-									</a>
-								</td>
-								<td>
-									<a
-										target="_blank"
-										href={getTatoebaLink(cv.base, cv.ce.part[1])}
-									>
-										{cv.base}
-										<span>{cv.ce.part[1]}</span>
-									</a>
-								</td>
-							</tr>
-
-							<tr className="pres">
-								{[...Array(6)].map((x, i) => {
-									return (
-										<td key={i}>
+					<>
+						{cv.verb.kind === 'irregular' ? (
+							<div>irreg</div>
+						) : (
+							<table key={i}>
+								<tbody>
+									<tr className="part">
+										<td className="verb">
 											<a
 												target="_blank"
-												href={getTatoebaLink(
-													cv.base,
-													cv.ce.pres[i]
-												)}
-											>
-												{cv.base}
-												<span>{cv.ce.pres[i]}</span>
-											</a>
-										</td>
-									);
-								})}
-							</tr>
-
-							<tr className="impe">
-								{[...Array(6)].map((x, i) => {
-									return (
-										<td key={i}>
-											<a
-												target="_blank"
-												href={getTatoebaLink(
-													cv.base,
-													cv.ce.impe[i]
-												)}
-											>
-												{cv.base}
-												<span>{cv.ce.impe[i]}</span>
-											</a>
-										</td>
-									);
-								})}
-							</tr>
-
-							<tr className="pret">
-								{[...Array(6)].map((x, i) => {
-									return (
-										<td key={i}>
-											<a
-												target="_blank"
-												href={getTatoebaLink(
-													cv.base,
-													cv.ce.pret[i]
-												)}
-											>
-												{cv.base}
-												<span>{cv.ce.pret[i]}</span>
-											</a>
-										</td>
-									);
-								})}
-							</tr>
-
-							<tr className="futu">
-								{[...Array(6)].map((x, i) => {
-									return (
-										<td key={i}>
-											<a
-												target="_blank"
-												href={getTatoebaLink(
-													cv.verb.verbName,
-													cv.ce.futu[i]
-												)}
+												href={`https://www.123teachme.com/spanish_verb_conjugation/${cv.verb.verbName}`}
 											>
 												{cv.verb.verbName}
-												<span>{cv.ce.futu[i]}</span>
 											</a>
 										</td>
-									);
-								})}
-							</tr>
-
-							<tr className="cond">
-								{[...Array(6)].map((x, i) => {
-									return (
-										<td key={i}>
-											<a
-												target="_blank"
-												href={getTatoebaLink(
-													cv.verb.verbName,
-													cv.ce.cond[i]
-												)}
-											>
-												{cv.verb.verbName}
-												<span>{cv.ce.cond[i]}</span>
-											</a>
-										</td>
-									);
-								})}
-							</tr>
-
-							<tr className="subj">
-								{[...Array(6)].map((x, i) => {
-									return (
-										<td key={i}>
+										<td>
 											<a
 												target="_blank"
 												href={getTatoebaLink(
 													cv.base,
-													cv.ce.subj[i]
+													cv.ce.part[0]
 												)}
 											>
 												{cv.base}
-												<span>{cv.ce.subj[i]}</span>
+												<span>{cv.ce.part[0]}</span>
 											</a>
 										</td>
-									);
-								})}
-							</tr>
-						</tbody>
-					</table>
+										<td>
+											<a
+												target="_blank"
+												href={getTatoebaLink(
+													cv.base,
+													cv.ce.part[1]
+												)}
+											>
+												{cv.base}
+												<span>{cv.ce.part[1]}</span>
+											</a>
+										</td>
+									</tr>
+
+									<tr className="pres">
+										{[...Array(6)].map((x, i) => {
+											return (
+												<td key={i}>
+													<a
+														target="_blank"
+														href={getTatoebaLink(
+															cv.base,
+															cv.ce.pres[i]
+														)}
+													>
+														{cv.base}
+														<span>
+															{cv.ce.pres[i]}
+														</span>
+													</a>
+												</td>
+											);
+										})}
+									</tr>
+
+									<tr className="impe">
+										{[...Array(6)].map((x, i) => {
+											return (
+												<td key={i}>
+													<a
+														target="_blank"
+														href={getTatoebaLink(
+															cv.base,
+															cv.ce.impe[i]
+														)}
+													>
+														{cv.base}
+														<span>
+															{cv.ce.impe[i]}
+														</span>
+													</a>
+												</td>
+											);
+										})}
+									</tr>
+
+									<tr className="pret">
+										{[...Array(6)].map((x, i) => {
+											return (
+												<td key={i}>
+													<a
+														target="_blank"
+														href={getTatoebaLink(
+															cv.base,
+															cv.ce.pret[i]
+														)}
+													>
+														{cv.base}
+														<span>
+															{cv.ce.pret[i]}
+														</span>
+													</a>
+												</td>
+											);
+										})}
+									</tr>
+
+									<tr className="futu">
+										{[...Array(6)].map((x, i) => {
+											return (
+												<td key={i}>
+													<a
+														target="_blank"
+														href={getTatoebaLink(
+															cv.verb.verbName,
+															cv.ce.futu[i]
+														)}
+													>
+														{cv.verb.verbName}
+														<span>
+															{cv.ce.futu[i]}
+														</span>
+													</a>
+												</td>
+											);
+										})}
+									</tr>
+
+									<tr className="cond">
+										{[...Array(6)].map((x, i) => {
+											return (
+												<td key={i}>
+													<a
+														target="_blank"
+														href={getTatoebaLink(
+															cv.verb.verbName,
+															cv.ce.cond[i]
+														)}
+													>
+														{cv.verb.verbName}
+														<span>
+															{cv.ce.cond[i]}
+														</span>
+													</a>
+												</td>
+											);
+										})}
+									</tr>
+
+									<tr className="subj">
+										{[...Array(6)].map((x, i) => {
+											return (
+												<td key={i}>
+													<a
+														target="_blank"
+														href={getTatoebaLink(
+															cv.base,
+															cv.ce.subj[i]
+														)}
+													>
+														{cv.base}
+														<span>
+															{cv.ce.subj[i]}
+														</span>
+													</a>
+												</td>
+											);
+										})}
+									</tr>
+								</tbody>
+							</table>
+						)}
+					</>
 				);
 			})}
 		</div>
