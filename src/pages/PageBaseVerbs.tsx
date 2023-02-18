@@ -13,7 +13,16 @@ export const PageBaseVerbs = () => {
 				return (
 					<>
 						{cv.verb.kind === 'irregular' ? (
-							<div>irreg</div>
+							<div className="irregularVerbArea">
+								<div className="verbName">
+									{cv.verb.verbName} ({cv.verb.infos[0]})
+								</div>
+								<div className="infos">
+									{cv.verb.infos.map((info, i) => {
+										return i === 0 ? '' : <div key={i}>{info}</div>;
+									})}
+								</div>
+							</div>
 						) : (
 							<table key={i}>
 								<tbody>

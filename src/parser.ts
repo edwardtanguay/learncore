@@ -34,11 +34,22 @@ const getRegularVerbs = (verbDefinitions: string): IVerb[] => {
 			});
 		} else {
 			if (!qstr.isEmpty(line)) {
-				const theVerb = qstr.breakIntoParts(line, ':')[0]
+				const parts = qstr.breakIntoParts(line, ':');
+				const theVerb = parts[0];
+				const rest = parts[1]; // incluy-,4-,5- ; - ; 3incluy-, 6incluy- // - ; - ; incluy- // incluyendo ; -
+				const thirds = qstr.breakIntoParts(rest, '//');
+				const infos = [];
+				infos.push(thirds[2]);
+				for (const info of qstr.breakIntoParts(thirds[0], ';')) {
+					infos.push(info);
+				}
+				for (const info of qstr.breakIntoParts(thirds[1], ';')) {
+					infos.push(info);
+				}
 				ra.push({
 					verbName: theVerb,
 					kind: 'irregular',
-					infos: []
+					infos
 				});
 			}
 		}
