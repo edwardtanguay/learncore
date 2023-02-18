@@ -46,8 +46,16 @@ export const PageBaseVerbs = () => {
 								{[...Array(6)].map((x, i) => {
 									return (
 										<td key={i}>
-											{cv.base}
-											<span>{cv.ce.pres[i]}</span>
+											<a
+												target="_blank"
+												href={getTatoebaLink(
+													cv,
+													cv.ce.pres[i]
+												)}
+											>
+												{cv.base}
+												<span>{cv.ce.pres[i]}</span>
+											</a>
 										</td>
 									);
 								})}
