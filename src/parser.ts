@@ -1,7 +1,5 @@
 import { IConjugatedVerb, IConjugationEndings } from "./interfaces";
 
-export const regularVerbs: string[] = ['hablar','comer'];
-
 export const verbDefinitions = `
 hablar
 evitar
@@ -22,6 +20,12 @@ tener: tien-,1tengo,4-,5- ; - ; tuv- // tendr- ; tendr- ; teng- // - ; -
 
 incluir: incluy-,4-,5- ; - ; 3incluy-, 6incluy- // - ; - ; incluy- // incluyendo ; -	
 `;
+
+const getRegularVerbs = (verbDefinitions: string) => {
+	return ['comer', 'vivir'];
+}
+
+export const regularVerbs: string[] = getRegularVerbs(verbDefinitions); 
 
 const conjugationEndings: IConjugationEndings = {
 	ar: {
