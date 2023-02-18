@@ -63,8 +63,12 @@ body {
 			}
 
 			tr.impe {
-				span {
-					color: rgb(189, 135, 35);
+				a {
+					text-decoration: none;
+					color: #ccc; 
+					span {
+						color: rgb(189, 135, 35);
+					}
 				}
 			}
 
