@@ -2,6 +2,8 @@ import { IConjugatedVerb, IConjugationEndings, ISummaryVerbGroups, IVerb } from 
 import * as qstr from './qtools/qstr';
 
 export const verbDefinitions = `
+ofrecer: 1ofrezco;-;-//-;-;ofrezc-//-;-
+conectar
 unir
 separar
 poder: o>ue,4-,5-;-;pud-,1pude,3pudo//podr-;podr-;o>ue,4-,5- // pudiendo; -
@@ -119,9 +121,9 @@ export const getSummaryVerbGroups = (conjugatedVerbs: IConjugatedVerb[]): ISumma
 	return {
 		"arRegular": getVerbList('regular', 'ar'), 
 		"arIrregular": getVerbList('irregular', 'ar'),
-		"erRegular": [],
-		"erIrregular": [],
-		"irRegular": [],
-		"irIrregular": [],
+		"erRegular": getVerbList('regular', 'er'),
+		"erIrregular": getVerbList('irregular', 'er'),
+		"irRegular": getVerbList('regular', 'ir'),
+		"irIrregular": getVerbList('irregular', 'ir')
 	}
 }

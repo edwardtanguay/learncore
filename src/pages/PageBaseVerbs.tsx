@@ -13,7 +13,12 @@ export const PageBaseVerbs = () => {
 		<div className="page pageBaseVerbs">
 			<div className="summary">
 				<ul className="summaryVerbGroups">
-					<SummaryVerbGroup summaryVerbGroup={summaryVerbGroups.arRegular}/>
+					<SummaryVerbGroup summaryVerbGroup={summaryVerbGroups.arRegular} kind="regular"/>
+					<SummaryVerbGroup summaryVerbGroup={summaryVerbGroups.arIrregular} kind="irregular"/>
+					<SummaryVerbGroup summaryVerbGroup={summaryVerbGroups.erRegular} kind="regular"/>
+					<SummaryVerbGroup summaryVerbGroup={summaryVerbGroups.erIrregular} kind="irregular"/>
+					<SummaryVerbGroup summaryVerbGroup={summaryVerbGroups.irRegular} kind="regular"/>
+					<SummaryVerbGroup summaryVerbGroup={summaryVerbGroups.irIrregular} kind="irregular"/>
 				</ul>
 			</div>
 			{conjugatedVerbs.map((cv, i) => {

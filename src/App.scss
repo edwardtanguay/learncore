@@ -32,6 +32,16 @@ body {
 
 	.pageBaseVerbs {
 
+		.summary {
+			ul.summaryVerbGroups {
+				margin-left: -1.3rem;
+				li.irregular {
+					color: #888;
+					font-style: italic;
+				}
+			}
+		}
+
 		.irregularVerbArea {
 			margin-bottom: 1rem;
 

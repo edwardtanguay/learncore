@@ -1,12 +1,13 @@
 import { ISummaryVerbGroups } from "../interfaces";
 
 interface IProps {
-	summaryVerbGroup: string[]
+	summaryVerbGroup: string[],
+	kind: string
 }
 
-export const SummaryVerbGroup = ({ summaryVerbGroup }: IProps) => {
+export const SummaryVerbGroup = ({ summaryVerbGroup, kind }: IProps) => {
 	return (
-		<li>
+		<li className={kind}>
 			{summaryVerbGroup.map((verbName, i) => {
 				const sep =
 					i === summaryVerbGroup.length - 1 ? '' : ', ';
