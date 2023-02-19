@@ -2,6 +2,8 @@ import { IConjugatedVerb, IConjugationEndings, ISummaryVerbGroups, IVerb } from 
 import * as qstr from './qtools/qstr';
 
 export const verbDefinitions = `
+ejecutar
+arrancar: -; -; 1arranqué // -; -; arranqu- // -; -
 ofrecer: 1ofrezco;-;-//-;-;ofrezc-//-;-
 conectar
 unir
