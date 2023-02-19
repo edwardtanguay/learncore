@@ -111,10 +111,14 @@ for (const verb of verbs) {
 	conjugatedVerbs.push(conjugatedVerb);
 }
 
+const getVerbList = (kind: string, ending: string) => {
+	return conjugatedVerbs.filter(m => m.verb.kind === kind && m.verb.verbName.endsWith(ending)).map(m => m.verb.verbName).sort();
+}
+
 export const getSummaryVerbGroups = (conjugatedVerbs: IConjugatedVerb[]): ISummaryVerbGroups => {
 	return {
-		"arRegular": conjugatedVerbs.filter(m => m.verb.kind === 'regular' && m.verb.verbName.endsWith('ar')).map(m => m.verb.verbName),
-		"arIrregular": [],
+		"arRegular": getVerbList('regular', 'ar'), 
+		"arIrregular": getVerbList('irregular', 'ar'),
 		"erRegular": [],
 		"erIrregular": [],
 		"irRegular": [],
