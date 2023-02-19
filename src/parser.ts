@@ -1,4 +1,4 @@
-import { IConjugatedVerb, IConjugationEndings, IVerb } from "./interfaces";
+import { IConjugatedVerb, IConjugationEndings, ISummaryVerbGroups, IVerb } from "./interfaces";
 import * as qstr from './qtools/qstr';
 
 export const verbDefinitions = `
@@ -109,4 +109,15 @@ export const conjugatedVerbs: IConjugatedVerb[] = [];
 for (const verb of verbs) {
 	const conjugatedVerb = conjugateVerb(verb);
 	conjugatedVerbs.push(conjugatedVerb);
+}
+
+export const getSummaryVerbGroups = (conjugatedVerbs: IConjugatedVerb[]): ISummaryVerbGroups => {
+	return {
+		"arRegular": conjugatedVerbs.filter(m => m.verb.kind === 'regular' && m.verb.verbName.endsWith('ar')).map(m => m.verb.verbName),
+		"arIrregular": [],
+		"erRegular": [],
+		"erIrregular": [],
+		"irRegular": [],
+		"irIrregular": [],
+	}
 }

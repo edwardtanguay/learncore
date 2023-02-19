@@ -36,3 +36,13 @@ export type IVerb = {
 	kind: string,
 	infos: string[]
 }
+
+export type ISummaryVerbGroups = {
+
+	arRegular: string[],
+	arIrregular: string[],
+	erRegular: string[],
+	erIrregular: string[],
+	irRegular: string[],
+	irIrregular: string[],
+	}

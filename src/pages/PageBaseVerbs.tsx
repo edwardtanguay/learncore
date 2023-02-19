@@ -1,5 +1,6 @@
-import { IConjugatedVerb, IConjugationEndings } from '../interfaces';
-import { conjugatedVerbs } from '../parser';
+import { getSummaryVerbGroups, conjugatedVerbs } from '../parser';
+
+const summaryVerbGroups = getSummaryVerbGroups(conjugatedVerbs);
 
 // also link: https://es.bab.la/diccionario/espanol-ingles/permitimos
 
@@ -9,23 +10,45 @@ export const PageBaseVerbs = () => {
 	};
 	return (
 		<div className="page pageBaseVerbs">
+			<div className="summary">
+				<ul className="summaryVerbGroups">
+					<li>
+						{summaryVerbGroups.arRegular.map((verbName, i) => {
+							const sep =
+								i === summaryVerbGroups.arRegular.length - 1
+									? ''
+									: ', ';
+							return (
+								<>
+									<span>{verbName}</span>
+									{sep}
+								</>
+							);
+						})}
+					</li>
+				</ul>
+			</div>
 			{conjugatedVerbs.map((cv, i) => {
 				return (
 					<>
 						{cv.verb.kind === 'irregular' ? (
 							<div className="irregularVerbArea">
 								<div className="verbName">
-											<a
-												target="_blank"
-												href={`https://www.123teachme.com/spanish_verb_conjugation/${cv.verb.verbName}`}
-											>
-												{cv.verb.verbName}
-											</a>
+									<a
+										target="_blank"
+										href={`https://www.123teachme.com/spanish_verb_conjugation/${cv.verb.verbName}`}
+									>
+										{cv.verb.verbName}
+									</a>
 									<span>{cv.verb.infos[0]}</span>
 								</div>
 								<div className="infos">
 									{cv.verb.infos.map((info, i) => {
-										return i === 0 ? '' : <div key={i}>{info}</div>;
+										return i === 0 ? (
+											''
+										) : (
+											<div key={i}>{info}</div>
+										);
 									})}
 								</div>
 							</div>
