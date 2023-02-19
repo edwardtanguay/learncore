@@ -1,3 +1,4 @@
+import { SummaryVerbGroup } from '../component/SummaryVerbGroup';
 import { getSummaryVerbGroups, conjugatedVerbs } from '../parser';
 
 const summaryVerbGroups = getSummaryVerbGroups(conjugatedVerbs);
@@ -12,20 +13,7 @@ export const PageBaseVerbs = () => {
 		<div className="page pageBaseVerbs">
 			<div className="summary">
 				<ul className="summaryVerbGroups">
-					<li>
-						{summaryVerbGroups.arRegular.map((verbName, i) => {
-							const sep =
-								i === summaryVerbGroups.arRegular.length - 1
-									? ''
-									: ', ';
-							return (
-								<>
-									<span>{verbName}</span>
-									{sep}
-								</>
-							);
-						})}
-					</li>
+					<SummaryVerbGroup summaryVerbGroup={summaryVerbGroups.arRegular}/>
 				</ul>
 			</div>
 			{conjugatedVerbs.map((cv, i) => {
