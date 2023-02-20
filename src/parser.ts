@@ -1,32 +1,47 @@
 import { IConjugatedVerb, IConjugationEndings, ISummaryVerbGroups, IVerb } from "./interfaces";
 import * as qstr from './qtools/qstr';
 
+// TODO: add rank at end and buttons: Most Recent, Most Important, Base Conjugations
+
 export const verbDefinitions = `
-ejecutar
-arrancar: -; -; 1arranqué // -; -; arranqu- // -; -
-ofrecer: 1ofrezco;-;-//-;-;ofrezc-//-;-
-conectar
-unir
-separar
+ser: 1soy, 2eres, 3es, 4somos, 5sois, 6son; 1era, 2eras, 3era, 4éramos, 5erais, 6eran; 1fui, 2fuiste, 3fue, 4fuimos, 5fuisteis, 6fueron // -; -; - // -; -
+estar: 1estoy, 2estás, 3está, 6están; -; 1estuve, 2estuviste, 3estuvo, 4estuvimos; 5estuvisteis, 6estuvieron // -; -; 1esté, 2estés, 3esté, 6estén // -; -
+ir: 1voy, 2vas, 3va, 4vamos, 5vais, 6va; 1iba, 2ibas, 3iba, 4íbamos, 5ibais, 6iban; 1fui, 2fuiste, 3fue, 4fuimos, 5fuisteis, 6fueron // -; -; vay- // yendo; -
+haber: 1he, 2has, 3ha, 4hemos, 6han; -; hub-, 1hube, 3hubo // hubr-; hubr-; hay // -; -
+
 poder: o>ue,4-,5-;-;pud-,1pude,3pudo//podr-;podr-;o>ue,4-,5- // pudiendo; -
-crear
-recordar: o>ue,4-,5- ; - ; - // - ; - ; o>ue,4-,5- // - ; - 
-gritar
-permitir
-hablar
-evitar
+querer: quier-, 4-, 5-; -; quis-, 1quise, 2quiso // querr-; querr-; quier-, 4-, 5- // -; - 
+hacer: 1hago ; hac- ; hic-,1hice,3hizo // har- ; har- ; hag- // - ; hecho
+tener: tien-,1tengo,4-,5- ; - ; tuv- // tendr- ; tendr- ; teng- // - ; -
+saber: 1sé; -; sup-, 1supe, 3supo // sabr-; sabr-; sep- // -; -
+ver: 1veo; ve-; 1vi, 3vio // -; -; ve- // -; visto
+
+venir: vien-, 1vengo, 4-, 5-; -; vin-, 1vine, 3vino // vendr-; vendr-; veng- // viniendo; -
+vender
+
+llegar: - ; - ; 1llegué // - ; - ; llegu- // - ; -
 llamar
+
+instalar
+ejecutar
+conectar
+separar
+crear
+gritar
+hablar
 notar
+evitar
 
 comer
 
+unir
 vivir
-llegar: - ; - ; 1llegué // - ; - ; llegu- // - ; -
+permitir
 
-hacer: 1hago ; hac- ; hic-,1hice,3hizo // har- ; har- ; hag- // - ; hecho
+arrancar: -; -; 1arranqué // -; -; arranqu- // -; -
+ofrecer: 1ofrezco;-;-//-;-;ofrezc-//-;-
+recordar: o>ue,4-,5- ; - ; - // - ; - ; o>ue,4-,5- // - ; - 
 volver: vuelv-,4-,5- ; - ; - // - ; - ; vuelv-,4-,5- // - ; vuelto
-tener: tien-,1tengo,4-,5- ; - ; tuv- // tendr- ; tendr- ; teng- // - ; -
-
 incluir: incluy-,4-,5- ; - ; 3incluy-, 6incluy- // - ; - ; incluy- // incluyendo ; -	
 `;
 
@@ -41,7 +56,7 @@ const getRegularVerbs = (verbDefinitions: string): IVerb[] => {
 				infos: []
 			});
 		} else {
-			if (!qstr.isEmpty(line)) {
+			if (!qstr.isEmpty(line) && !line.startsWith('//')) {
 				const parts = qstr.breakIntoParts(line, ':');
 				const theVerb = parts[0];
 				const rest = parts[1]; // incluy-,4-,5- ; - ; 3incluy-, 6incluy- // - ; - ; incluy- // incluyendo ; -
@@ -121,7 +136,7 @@ const getVerbList = (kind: string, ending: string) => {
 
 export const getSummaryVerbGroups = (conjugatedVerbs: IConjugatedVerb[]): ISummaryVerbGroups => {
 	return {
-		"arRegular": getVerbList('regular', 'ar'), 
+		"arRegular": getVerbList('regular', 'ar'),
 		"arIrregular": getVerbList('irregular', 'ar'),
 		"erRegular": getVerbList('regular', 'er'),
 		"erIrregular": getVerbList('irregular', 'er'),
