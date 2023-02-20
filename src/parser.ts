@@ -11,6 +11,7 @@ haber: 1he, 2has, 3ha, 4hemos, 6han; -; hub-, 1hube, 3hubo // hubr-; hubr-; hay 
 
 poder: o>ue,4-,5-;-;pud-,1pude,3pudo//podr-;podr-;o>ue,4-,5- // pudiendo; -
 querer: quier-, 4-, 5-; -; quis-, 1quise, 2quiso // querr-; querr-; quier-, 4-, 5- // -; - 
+deber
 hacer: 1hago ; hac- ; hic-,1hice,3hizo // har- ; har- ; hag- // - ; hecho
 tener: tien-,1tengo,4-,5- ; - ; tuv- // tendr- ; tendr- ; teng- // - ; -
 saber: 1sé; -; sup-, 1supe, 3supo // sabr-; sabr-; sep- // -; -
