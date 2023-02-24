@@ -9,7 +9,7 @@ export interface IRawFlashcard {
 }
 
 export interface IFlashcard extends IRawFlashcard {
-	isOpen: boolean
+	isOpen?: boolean
 }
 
 export type IConjugationEnding = {

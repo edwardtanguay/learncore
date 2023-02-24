@@ -1,4 +1,5 @@
 const verbDefinitions = `
+decir: dic-, 1digo, 4-, 5-; -; dij-, 1dije, 3dijo // dir-; dir-; dig- // diciendo; dicho
 
 ser: 1soy, 2eres, 3es, 4somos, 5sois, 6son; 1era, 2eras, 3era, 4éramos, 5erais, 6eran; 1fui, 2fuiste, 3fue, 4fuimos, 5fuisteis, 6fueron // -; -; - // -; -
 estar: 1estoy, 2estás, 3está, 6están; -; 1estuve, 2estuviste, 3estuvo, 4estuvimos; 5estuvisteis, 6estuvieron // -; -; 1esté, 2estés, 3esté, 6estén // -; -

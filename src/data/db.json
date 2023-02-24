@@ -323,6 +323,33 @@
       "rank": 2.5,
       "whenCreated": "2023-02-24 21:52:35",
       "id": 38
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "let's keep it simple",
+      "back": "vamos a hacerlo simple",
+      "rank": 2.5,
+      "whenCreated": "2023-02-24 22:27:10",
+      "id": 39
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "what I'm going to do is",
+      "back": "lo que voy a hacer es",
+      "rank": 2.5,
+      "whenCreated": "2023-02-24 22:27:10",
+      "id": 40
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "What were you saying?",
+      "back": "¿Qué decías ?",
+      "rank": 2.5,
+      "whenCreated": "2023-02-24 22:27:10",
+      "id": 41
     }
   ]
 }

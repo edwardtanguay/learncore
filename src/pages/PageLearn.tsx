@@ -1,8 +1,12 @@
 import { useContext } from 'react';
 import { AppContext } from '../AppContext';
+import db from '../data/db.json';
+import { IFlashcard } from '../interfaces';
+
+const flashcards: IFlashcard[] = db.flashcards;
 
 export const PageLearn = () => {
-	const { flashcards, handleToggleFlashcard } = useContext(AppContext);
+	const { handleToggleFlashcard } = useContext(AppContext);
 
 	return (
 		<div className="page pageLearn">
