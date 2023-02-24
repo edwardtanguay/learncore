@@ -4,6 +4,7 @@ import * as qstr from './qtools/qstr';
 // TODO: add rank at end and buttons: Most Recent, Most Important, Base Conjugations
 
 export const verbDefinitions = `
+// convertir
 
 ser: 1soy, 2eres, 3es, 4somos, 5sois, 6son; 1era, 2eras, 3era, 4éramos, 5erais, 6eran; 1fui, 2fuiste, 3fue, 4fuimos, 5fuisteis, 6fueron // -; -; - // -; -
 estar: 1estoy, 2estás, 3está, 6están; -; 1estuve, 2estuviste, 3estuvo, 4estuvimos; 5estuvisteis, 6estuvieron // -; -; 1esté, 2estés, 3esté, 6estén // -; -
@@ -13,6 +14,7 @@ haber: 1he, 2has, 3ha, 4hemos, 6han; -; hub-, 1hube, 3hubo // hubr-; hubr-; hay 
 poder: pued-,4-,5-;-;pud-,1pude,3pudo//podr-;podr-;peud-,4-,5- // pudiendo; -
 querer: quier-, 4-, 5-; -; quis-, 1quise, 2quiso // querr-; querr-; quier-, 4-, 5- // -; - 
 deber
+desear
 hacer: 1hago ; hac- ; hic-,1hice,3hizo // har- ; har- ; hag- // - ; hecho
 tener: tien-,1tengo,4-,5- ; - ; tuv- // tendr- ; tendr- ; teng- // - ; -
 dar: 1doy, 5dais; -; 1di, 2diste, 3dio, 4dimos, 5disteis, 6dieron // -; -; 1dé, 2des, 3dé, 4demos, 5deis, 6den // -; -
