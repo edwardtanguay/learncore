@@ -465,8 +465,44 @@
       "front": "for a long time",
       "back": "durante mucho tiempo",
       "rank": 2.5,
-      "whenCreated": "2023-02-24 23:07:18",
+      "whenCreated": "2023-02-24 23:07:19",
       "id": 55
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "that is populated with objects",
+      "back": "que está poblado de objetos [/ch/ay-tohs]",
+      "rank": 2.5,
+      "whenCreated": "2023-02-24 23:36:09",
+      "id": 56
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "if I try to see",
+      "back": "si yo trato de ver",
+      "rank": 2.5,
+      "whenCreated": "2023-02-24 23:36:09",
+      "id": 57
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "that even though",
+      "back": "que aunque",
+      "rank": 2.5,
+      "whenCreated": "2023-02-24 23:36:09",
+      "id": 58
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "tal como lo definí",
+      "back": "as i defined it",
+      "rank": 2.5,
+      "whenCreated": "2023-02-24 23:36:09",
+      "id": 59
     }
   ]
 }

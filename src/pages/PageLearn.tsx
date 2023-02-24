@@ -3,7 +3,8 @@ import { AppContext } from '../AppContext';
 import db from '../data/db.json';
 import { IFlashcard } from '../interfaces';
 
-const flashcards: IFlashcard[] = db.flashcards;
+let flashcards: IFlashcard[] = db.flashcards;
+flashcards = flashcards.sort((a, b) => b.whenCreated.localeCompare(a.whenCreated));
 
 export const PageLearn = () => {
 	const { handleToggleFlashcard } = useContext(AppContext);
