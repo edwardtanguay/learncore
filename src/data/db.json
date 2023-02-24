@@ -314,6 +314,15 @@
       "rank": 2.5,
       "whenCreated": "2023-02-20 14:18:55",
       "id": 37
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "instead",
+      "back": "en vez",
+      "rank": 2.5,
+      "whenCreated": "2023-02-24 21:52:35",
+      "id": 38
     }
   ]
 }
