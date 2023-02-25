@@ -779,7 +779,6 @@ export const wrapFoundSearchWordsWithClassElement = (text: string, searchText: s
 
 export const includesOneOfTheseWords = (text: string, words: string) => {
 	for (const word of words) {
-		console.log(text.toLowerCase(), word);
 		if (text.toLowerCase().includes(word)) {
 			return true;
 		}

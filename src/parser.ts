@@ -40,7 +40,6 @@ const getRegularVerbs = (verbDefinitions: string): IVerb[] => {
 }
 
 export const verbs: IVerb[] = getRegularVerbs(verbDefinitions);
-console.log(verbs);
 
 const conjugationEndings: IConjugationEndings = {
 	ar: {

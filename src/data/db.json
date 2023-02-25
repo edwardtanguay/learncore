@@ -674,6 +674,123 @@
       "rank": 2.5,
       "whenCreated": "2023-02-25 14:44:16",
       "id": 78
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "delete an item",
+      "back": "borrar un elemento",
+      "rank": 2.5,
+      "whenCreated": "2023-02-25 16:47:06",
+      "id": 79
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "the boxes",
+      "back": "las cajas",
+      "rank": 2.5,
+      "whenCreated": "2023-02-25 16:47:06",
+      "id": 80
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "I will show you how",
+      "back": "te voy a mostrar cómo",
+      "rank": 2.5,
+      "whenCreated": "2023-02-25 16:47:06",
+      "id": 81
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "delete an item",
+      "back": "borrar un elemento",
+      "rank": 2.5,
+      "whenCreated": "2023-02-25 16:47:38",
+      "id": 82
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "the boxes",
+      "back": "las cajas",
+      "rank": 2.5,
+      "whenCreated": "2023-02-25 16:47:38",
+      "id": 83
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "I will show you how",
+      "back": "te voy a mostrar cómo",
+      "rank": 2.5,
+      "whenCreated": "2023-02-25 16:47:38",
+      "id": 84
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "here I have an application",
+      "back": "acá yo tengo una aplicación",
+      "rank": 2.5,
+      "whenCreated": "2023-02-25 16:47:38",
+      "id": 85
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "it is blank",
+      "back": "está en blanco",
+      "rank": 2.5,
+      "whenCreated": "2023-02-25 16:47:38",
+      "id": 86
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "as far as possible",
+      "back": "en la medida de lo posible",
+      "rank": 2.5,
+      "whenCreated": "2023-02-25 16:47:38",
+      "id": 87
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "usually, what is desirable is that each time",
+      "back": "usualmente, lo deseable es que cada vez que",
+      "rank": 2.5,
+      "whenCreated": "2023-02-25 16:47:38",
+      "id": 88
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "here I created a document",
+      "back": "acá yo he creado un documento [joe]",
+      "rank": 2.5,
+      "whenCreated": "2023-02-25 16:47:38",
+      "id": 89
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "so it's important",
+      "back": "así que es importante",
+      "rank": 2.5,
+      "whenCreated": "2023-02-25 16:47:38",
+      "id": 90
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "How do we do it?",
+      "back": "¿Cómo lo hacemos?",
+      "rank": 2.5,
+      "whenCreated": "2023-02-25 16:47:38",
+      "id": 91
     }
   ]
 }
