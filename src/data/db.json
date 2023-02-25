@@ -629,6 +629,51 @@
       "rank": 2.5,
       "whenCreated": "2023-02-25 14:16:22",
       "id": 73
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "we need one last step",
+      "back": "nos falta un último paso",
+      "rank": 2.5,
+      "whenCreated": "2023-02-25 14:24:07",
+      "id": 74
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "to get our module ready",
+      "back": "para dejar listo nuestro módulo",
+      "rank": 2.5,
+      "whenCreated": "2023-02-25 14:25:47",
+      "id": 75
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "the button that I just added",
+      "back": "el botón que acabo de agregar",
+      "rank": 2.5,
+      "whenCreated": "2023-02-25 14:35:47",
+      "id": 76
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "the opposite value",
+      "back": "el valor opuesto",
+      "rank": 2.5,
+      "whenCreated": "2023-02-25 14:40:29",
+      "id": 77
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "pr. yo voy a definier",
+      "back": "[joh boy]",
+      "rank": 2.5,
+      "whenCreated": "2023-02-25 14:44:16",
+      "id": 78
     }
   ]
 }
