@@ -1,7 +1,8 @@
 const verbDefinitions = `
+
 decir: dic-, 1digo, 4-, 5-; -; dij-, 1dije, 3dijo // dir-; dir-; dig- // diciendo; dicho
 
-ser: 1soy, 2eres, 3es, 4somos, 5sois, 6son; 1era, 2eras, 3era, 4éramos, 5erais, 6eran; 1fui, 2fuiste, 3fue, 4fuimos, 5fuisteis, 6fueron // -; -; - // -; -
+ser: 1soy, 2eres, 3es, 4somos, 5sois, 6son; 1era, 2eras, 3era, 4éramos, 5erais, 6eran; 1fui, 2fuiste, 3fue, 4fuimos, 5fuisteis, 6fueron // -; -; se- // -; -
 estar: 1estoy, 2estás, 3está, 6están; -; 1estuve, 2estuviste, 3estuvo, 4estuvimos; 5estuvisteis, 6estuvieron // -; -; 1esté, 2estés, 3esté, 6estén // -; -
 ir: 1voy, 2vas, 3va, 4vamos, 5vais, 6va; 1iba, 2ibas, 3iba, 4íbamos, 5ibais, 6iban; 1fui, 2fuiste, 3fue, 4fuimos, 5fuisteis, 6fueron // -; -; vay- // yendo; -
 haber: 1he, 2has, 3ha, 4hemos, 6han; -; hub-, 1hube, 3hubo // hubr-; hubr-; hay // -; -
@@ -55,6 +56,7 @@ definir
 arrancar: -; -; 1arranqué // -; -; arranqu- // -; -
 desplegar: desplieg-, 4-, 5-; -; 1desplegué // -; -; despliegu- // -; -
 mostrar: muestr-, 4-, 5-; -; - // -; -; muestr- // -; -
+buscar: -; -; 1busqué // -; -; busque- // -; -
 
 // AR: o-to-ue
 recordar: recuerd-,4-,5- ; - ; - // - ; - ; recuerd-,4-,5- // - ; -

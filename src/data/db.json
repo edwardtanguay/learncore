@@ -521,6 +521,78 @@
       "rank": 2.5,
       "whenCreated": "2023-02-25 12:49:47",
       "id": 61
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "We need to get started.",
+      "back": "Tenemos que arrancar.",
+      "rank": 2.5,
+      "whenCreated": "2023-02-25 13:14:18",
+      "id": 62
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "I'm going to delete the href property here",
+      "back": "voy a borrar acá la propiedad href [ACH-ay-ref]",
+      "rank": 2.5,
+      "whenCreated": "2023-02-25 13:17:27",
+      "id": 63
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "before an underscore",
+      "back": "antes un guión bajo [ggee-OHN BAH-/ch/oh, hard g]",
+      "rank": 2.5,
+      "whenCreated": "2023-02-25 13:25:55",
+      "id": 64
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "dollar sign and keys",
+      "back": "signo de dólar y llaves [SEEG-noh]",
+      "rank": 2.5,
+      "whenCreated": "2023-02-25 13:27:59",
+      "id": 65
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "even though",
+      "back": "a pesar de que",
+      "rank": 2.5,
+      "whenCreated": "2023-02-25 13:58:54",
+      "id": 66
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "I'm going to choose",
+      "back": "voy a escoger",
+      "rank": 2.5,
+      "whenCreated": "2023-02-25 13:59:26",
+      "id": 67
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "my app doesn't know exactly where I clicked",
+      "back": "mi aplicación no sabe exactamente dónde hice clic",
+      "rank": 2.5,
+      "whenCreated": "2023-02-25 14:00:47",
+      "id": 68
+    },
+    {
+      "category": "spanish",
+      "subcategory": "",
+      "front": "to be maintained throughout life",
+      "back": "que se mantenga a lo largo de la vida",
+      "rank": 2.5,
+      "whenCreated": "2023-02-25 14:02:36",
+      "id": 69
     }
   ]
 }
