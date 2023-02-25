@@ -9,7 +9,8 @@ export const convertStringBlockToLines = (stringBlock: string) => {
 	}
 }
 export const buildSpanishFlashcardObjs = (spanishImportText: string) => {
-	const lines = tools.convertStringBlockToLines(spanishImportText);
+	let lines = tools.convertStringBlockToLines(spanishImportText);
+	lines = tools.trimLinesOfEndBlanks(lines);
 	const lineBlocks = tools.getLineBlocksFromLines(lines);
 	const objs = tools.getSpanishObjectsFromLineBlocks(lineBlocks);
 	return objs;
@@ -63,3 +64,28 @@ export const getDateTime = () => {
 	return dateTime;
 }
 
+// returns a lines array that has front and end blank strings, as one without these blanks
+export const trimLinesOfEndBlanks = (lines: string[]) => {
+    lines = tools.trimBeginningLinesOfBlanks(lines);
+    lines = lines.reverse();
+    lines = tools.trimBeginningLinesOfBlanks(lines);
+    lines = lines.reverse();
+    return lines;
+}
+
+// if first line of lines array is blank, it will remove it
+// but don't remove any blank lines from middle or end
+export const trimBeginningLinesOfBlanks = (lines: string[]) => {
+    const newLines: string[] = [];
+    let trimmingBlanks = true;
+    lines.forEach(function (line) {
+        const newLine = line;
+        if (trimmingBlanks && line === '') {
+            // skip it since it is a preceding blank item
+        } else {
+            newLines.push(newLine);
+            trimmingBlanks = false;
+        }
+    });
+    return newLines;
+}
