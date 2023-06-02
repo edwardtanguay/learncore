@@ -4,3 +4,24 @@
 - responsive
 - audio link
 - mark as learned
+
+- subjunktivo imperfecto
+	- https://pdx.pressbooks.pub/redes2/chapter/leccion-15-el-imperfecto-de-subjuntivo/
+	- third person plural: hicieron, remove -ron and replace with 
+		-ra, -ras, -ra, -ramos, -rais, -ran
+		- you probably need a é for nosotros
+	- hacer
+		- conjugation
+			- yo hiciera
+			- tu hicieras
+			- él hiciera
+			- nosotros hiciéramos
+			- vosotros hicierais
+			- ellos hicieran
+		- examples
+			- Presente: Es importante que hagas ejercicio todos los días.
+			- Pasado o situación hipotética: Sería importante que hicieras ejercicio todos los días.
+
+
+- difference between tu and tú
+	- https://www.spanish.cl/Grammar/Notes/tu-vs-tu-difference.htm
