@@ -13,17 +13,47 @@ export const PageBaseVerbs = () => {
 		<div className="page pageBaseVerbs">
 			<div className="summary">
 				<ul className="summaryVerbGroups">
-					<SummaryVerbGroup summaryVerbGroup={summaryVerbGroups.arRegular} kind="regular"/>
-					<SummaryVerbGroup summaryVerbGroup={summaryVerbGroups.arIrregular} kind="irregular"/>
-					<SummaryVerbGroup summaryVerbGroup={summaryVerbGroups.erRegular} kind="regular"/>
-					<SummaryVerbGroup summaryVerbGroup={summaryVerbGroups.erIrregular} kind="irregular"/>
-					<SummaryVerbGroup summaryVerbGroup={summaryVerbGroups.irRegular} kind="regular"/>
-					<SummaryVerbGroup summaryVerbGroup={summaryVerbGroups.irIrregular} kind="irregular"/>
+					<SummaryVerbGroup
+						summaryVerbGroup={summaryVerbGroups.arRegular}
+						kind="regular"
+					/>
+					<SummaryVerbGroup
+						summaryVerbGroup={summaryVerbGroups.arIrregular}
+						kind="irregular"
+					/>
+					<SummaryVerbGroup
+						summaryVerbGroup={summaryVerbGroups.erRegular}
+						kind="regular"
+					/>
+					<SummaryVerbGroup
+						summaryVerbGroup={summaryVerbGroups.erIrregular}
+						kind="irregular"
+					/>
+					<SummaryVerbGroup
+						summaryVerbGroup={summaryVerbGroups.irRegular}
+						kind="regular"
+					/>
+					<SummaryVerbGroup
+						summaryVerbGroup={summaryVerbGroups.irIrregular}
+						kind="irregular"
+					/>
 				</ul>
 			</div>
 			{conjugatedVerbs.map((cv, i) => {
 				return (
 					<>
+						<hr />
+						<ul>
+							<li>
+								Es importante que hagas ejercicio todos los
+								días.
+							</li>
+							<li>
+								Sería importante que hicieras ejercicio todos
+								los días.
+							</li>
+						</ul>
+						<hr />
 						{cv.verb.kind === 'irregular' ? (
 							<div className="irregularVerbArea">
 								<div className="verbName">
