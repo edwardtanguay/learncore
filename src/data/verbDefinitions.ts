@@ -41,6 +41,8 @@ guardar
 generar
 cambiar
 almacenar
+enseñar
+quejar
 
 comer
 correr
@@ -51,6 +53,7 @@ unir
 permitir
 recibir
 definir
+discutir
 
 // AR IRREGULAR
 arrancar: -; -; 1arranqué // -; -; arranqu- // -; -
@@ -61,6 +64,7 @@ buscar: -; -; 1busqué // -; -; busque- // -; -
 // AR: o-to-ue
 recordar: recuerd-,4-,5- ; - ; - // - ; - ; recuerd-,4-,5- // - ; -
 encontrar: encuentr-, 4-, 5-; -; - // -; -; encuentr-, 4-, 5- // -; -
+demostrar: demuestr-, 4-, 5-; -; - // -; -; demuestr-, 4-, 5- // -; -
 
 // AR: g-to-gu
 agregar: -; -; agregué // -; -; agregu- // -; -
