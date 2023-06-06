@@ -1,6 +1,14 @@
 - .. implement simple import page
 	- .. process into JSON to test
 
+- irregular todo
+	- AR
+		- probar (pruebo)
+	- ER
+	- IR
+		- preferir (prefiero)
+		- pedir (pido)
+
 - responsive
 - audio link
 - mark as learned
@@ -8,7 +16,8 @@
 - subjunktivo imperfecto
 	- https://pdx.pressbooks.pub/redes2/chapter/leccion-15-el-imperfecto-de-subjuntivo/
 	- third person plural: hicieron, remove -ron and replace with 
-		-ra, -ras, -ra, -ramos, -rais, -ran
+		-ra, -ras, -ra, -'ramos, -rais, -ran
+		-se, -ses, -se, -'semos, -seis, -sen
 		- you probably need a é for nosotros
 	- hacer
 		- conjugation

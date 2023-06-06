@@ -43,6 +43,7 @@ cambiar
 almacenar
 enseñar
 quejar
+adjuntar
 
 comer
 correr
