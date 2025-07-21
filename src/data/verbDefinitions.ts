@@ -17,9 +17,7 @@ tener: tien-,1tengo,4-,5- ; - ; tuv- // tendr- ; tendr- ; teng- // - ; -
 dar: 1doy, 5dais; -; 1di, 2diste, 3dio, 4dimos, 5disteis, 6dieron // -; -; 1dé, 2des, 3dé, 4demos, 5deis, 6den // -; -
 saber: 1sé; -; sup-, 1supe, 3supo // sabr-; sabr-; sep- // -; -
 ver: 1veo, 5veis; ve-; 1vi, 3vio // -; -; ve- // -; visto
-
 venir: vien-, 1vengo, 4-, 5-; -; vin-, 1vine, 3vino // vendr-; vendr-; veng- // viniendo; -
-vender
 
 llegar: - ; - ; 1llegué // - ; - ; llegu- // - ; -
 llamar
@@ -44,10 +42,17 @@ almacenar
 enseñar
 quejar
 adjuntar
+expresar
+funcionar
+observar
+imaginar
 
 comer
 correr
 suceder
+vender
+cometer
+aprender
 
 vivir
 unir

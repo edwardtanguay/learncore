@@ -4,10 +4,14 @@
 - irregular todo
 	- AR
 		- probar (pruebo)
+		- modificar (modifiqué)
+		- criar (crío) - criarse
 	- ER
+		- paracer (parezco)
 	- IR
 		- preferir (prefiero)
 		- pedir (pido)
+		- intuir (intuyo)
 
 - responsive
 - audio link
@@ -15,7 +19,7 @@
 
 - subjunktivo imperfecto
 	- https://pdx.pressbooks.pub/redes2/chapter/leccion-15-el-imperfecto-de-subjuntivo/
-	- third person plural: hicieron, remove -ron and replace with 
+	- third person plural: hicieron, remove -ron to get "hicie" and add 
 		-ra, -ras, -ra, -'ramos, -rais, -ran
 		-se, -ses, -se, -'semos, -seis, -sen
 		- you probably need a é for nosotros
@@ -34,3 +38,37 @@
 
 - difference between tu and tú
 	- https://www.spanish.cl/Grammar/Notes/tu-vs-tu-difference.htm
+
+
+SPANISH VERB TENSES
+=================================================================================
+--1-BASE---------------------------------------------------------------------------
+1INFI - 01 - infinitive              - to speak                        - hablar
+1PRPA - 02 - present participle      - speaking                        - hablando
+1PAPA - 03 - past participle         - spoke                           - hablado
+--2-INDICATIVE---------------------------------------------------------------------
+2PRES - 04 - present                 - I speak                         - hablo 
+2IMPE - 05 - imperfect               - I was speaking, I used to speak - hablaba
+2PRET - 06 - preterite               - I spoke                         - hablé
+2PRPE - 07 - present perfect         - I have spoken                   - he hablado
+2PAPE - 08 - past perfect            - I had spoken                    - había hablado
+2PREP - 09 - preterite perfect       - I had spoken                    - hube hablado
+2FUIN - 10 - future intention        - I am going to speak             - voy a hablar
+2FUTU - 11 - future                  - I will speak                    - hablaré
+2FUTP - 12 - future perfect          - I will have spoken              - habré hablado
+2COND - 13 - conditional             - I would speak                   - hablaría
+2CONP - 14 - conditional perfect     - I would have spoken             - habría hablado
+--3-SUBJUNCTIVE--------------------------------------------------------------------
+3PRES - 15 - present                 - I suppose I speak               - hable
+3IMP1 - 16 - imperfect version 1     - I suppose I was speaking        - hablara
+3IMP2 - 17 - imperfect version 2     - I suppose I was speaking        - hablase
+3PRPE - 18 - present perfect         - I suppose I have spoken         - haya hablado
+3PAP1 - 19 - past perfect version 1  - I suppose I had spoken          - hubiera hablado
+3PAP2 - 20 - past perfect version 2  - I suppose I had spoken          - hubiese hablado
+3FUTU - 21 - future                  - I suppose I will speak          - hablare
+3FUTP - 22 - future perfect          - I suppose I will have spoken    - hubiere hablado
+--4-IMPERATIVE---------------------------------------------------------------------
+4AFFI - 23 - affirmative             - speak!                          - habla
+4NEGA - 24 - negative                - don't speak!                    - no hables
+===================================================================================
+
